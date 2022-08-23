@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everlast</title>
+    <script src="js/jquery-git.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="accountPopup loginActive">
+        <!-- signUpActive -->
+        <input type="button" value="close" class="btn_close">
+        <div>
+            <input type="button" value="LOGIN" data-popName="loginActive" class="active">
+            <input type="button" value="SIGN UP" data-popName="signUpActive">
+        </div>
+        <form>
+            <fieldset id="login" class="active">
+                <ul>
+                    <li>
+                        <input type="email" placeholder="email">
+                        <!--  class="success" -->
+                        <small class="active">Invaild format</small>
+                    </li>
+                    <li>
+                        <input type="password" placeholder="Password">
+                        <small>Please make at least 8 letters</small>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rememberCheck">
+                        <label for="rememberCheck">Remember me</label>
+                        <a href="#" data-popName="forgetActive">Forget Password</a>
+                    </li>
+                    <li>
+                        <a href="index_after.html">Login Now</a>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset id="signup">
+                <ul>
+                    <li>
+                        <input type="email" placeholder="firstName">
+                        <small>Please enter text only</small>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="lastName">
+                        <small>Please enter text only</small>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Email">
+                        <small>Invaild format</small>
+                    </li>
+                    <li>
+                        <input type="password" placeholder="Password">
+                        <small>Please make at least 8 letters</small>
+                    </li>
+                    <li>
+                        <input type="password" placeholder="Password">
+                        <small>Passwords do not match</small>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="EmailCheck">
+                        <label for="EmailCheck">Email to receive future deals, new product alerts and more.</label>
+                    </li>
+                    <li>
+                        <a href="index_before.html">Sign Up</a>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <div class="socialbar">
+            <span>or</span>
+        </div>
+        <ul class="social">
+            <li>
+                <a href="https://accounts.google.com/ServiceLogin/identifier?hl=ko&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">google</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjU1Nzg5MDg2LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D">facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/">instagram</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="ForgetPopup">
+        <input type="button" value="close" class="btn_close">
+        <h2>Forget Your Password?</h2>
+        <form>
+            <fieldset>
+                <input type="email" placeholder="email">
+                <!--  class="success" -->
+                <small>Invaild format</small>
+            </fieldset>
+        </form>
+        <mark>* Required Fields</mark>
+        <a href="index_before.html">Reset Password</a>
+    </div>
+
+
+    <div class="ShoppingCart">
+        <div>
+            <h2>Shopping Cart</h2>
+            <ul>
+                <li>
+                    <span>Product</span>
+                    <span>Size</span>
+                    <span>Quantity</span>
+                    <span>Total Price</span>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/listPage/PowerlockLacedTrainingGloves_bgrey1.jpg" alt="Powerlock Laced Training Gloves">
+                        <figcaption>
+                            <dl>
+                                <dt>Powerlock Laced Training Gloves</dt>
+                                <dd>Black/Grey</dd>
+                                <dd>$99.99</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                    <span class="componentSelect">
+                        <select>
+                            <option>14 OZ</option>
+                            <option>15 OZ</option>
+                            <option>16 OZ</option>
+                        </select>
+                    </span>
+                    <span>
+                        <input type="number" value="1" min="1" max="99">
+                    </span>
+                    <span>$199.98</span>
+                    <input type="button" value="X">
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/listPage/PowerlockLacedTrainingGloves_bgrey1.jpg" alt="Powerlock Laced Training Gloves">
+                        <figcaption>
+                            <dl>
+                                <dt>Powerlock Laced Training Gloves</dt>
+                                <dd>Black/Grey</dd>
+                                <dd>$99.99</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                    <span class="componentSelect">
+                        <select>
+                            <option>14 OZ</option>
+                            <option>15 OZ</option>
+                            <option>16 OZ</option>
+                        </select>
+                    </span>
+                    <span>
+                        <input type="number" value="1" min="1" max="99">
+                    </span>
+                    <span>$199.98</span>
+                    <input type="button" value="X">
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/listPage/PowerlockLacedTrainingGloves_bgrey1.jpg" alt="Powerlock Laced Training Gloves">
+                        <figcaption>
+                            <dl>
+                                <dt>Powerlock Laced Training Gloves</dt>
+                                <dd>Black/Grey</dd>
+                                <dd>$99.99</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                    <span class="componentSelect">
+                        <select>
+                            <option>14 OZ</option>
+                            <option>15 OZ</option>
+                            <option>16 OZ</option>
+                        </select>
+                    </span>
+                    <span>
+                        <input type="number" value="1" min="1" max="99">
+                    </span>
+                    <span>$199.98</span>
+                    <input type="button" value="X">
+                </li>
+            </ul>
+            <div>
+                <input type="button" value="Continue Shopping" class="btn_closeCart">
+                <span>
+                    <small>Total:</small>
+                    $599.94
+                </span>
+            </div>
+        </div>
+        <div>
+            <h2>Payment Info</h2>
+            <form>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="paymentCRC">Payment Method:</label>
+                            <input type="button" value="CreditCard" id="paymentCRC" class="active">
+                            <input type="button" value="PayPal" id="paymentPP">
+                        </li>
+                        <li>
+                            <label for="paymentUserName">Name On Card:</label>
+                            <input type="text" id="paymentUserName" placeholder="Name">
+                        </li>
+                        <li>
+                            <label for="paymentCardFirst">Card Number:</label>
+                            <input type="text" id="paymentCardFirst" maxlength="4" placeholder="Number">
+                            <input type="text" id="paymentCardSecond" maxlength="4">
+                            <input type="text" id="paymentCardThird" maxlength="4">
+                            <input type="text" id="paymentCardFourth" maxlength="4">
+                        </li>
+                        <li>
+                            <label for="paymentDate">Expiration Date:</label>
+                            <label for="paymentCVC">CVC:</label>
+                            <input type="month" id="paymentDate" placeholder="Date">
+                            <input type="text" id="paymentCVC" placeholder="CVC" maxlength="3">
+                        </li>
+                        <li>
+                            <input type="button" value="Check Out" data-popName="ShoppingCartComplete">
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="careerPopup">
+        <input type="button" value="close" class="btn_close">
+        <h2>CAREERS AT EVERLAST</h2>
+        <form>
+            <fieldset>
+                <ul>
+                    <li>
+                        <input type="text" placeholder="Name" title="inputUserName">
+                        <small>use 8 characters except for special characters</small>
+                    </li>
+                    <li>
+                        <input type="email" placeholder="email" title="inputUserEmail">
+                        <small>Invaild format</small>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="phoneNumber" title="inputUserPhoneNumber">
+                        <small>Please enter a number only</small>
+                    </li>
+                    <li>
+                        <span class="componentSelect">
+                            <select>
+                                <option>CHOOSE Position</option>
+                                <option>Ecommerce Manager</option>
+                                <option>Global Licensing Coordinator</option>
+                            </select>
+                        </span>
+                    </li>
+                    <li>
+                        <label for="selectFile">Upload Your Resume</label>
+                        <input type="file" id="selectFile">
+                        <small>Allowed file types: 'doc','docs','pdf' only</small>
+                    </li>
+                    <li>
+                        <input type="button" value="SEND" data-popName="careerComplete">
+                    </li>
+                    <li class="careerbutton">
+                        <span>ECOMMERCE MANAGER</span>
+                        <div>
+                            <strong>JOB DESCRIPTION:</strong>
+                            <ol>
+                                <li>
+                                    This role oversees the end-to-end e-commerce marketing and 
+                                    merchandising activities for the ecommerce business.
+                                </li>
+                                <li>
+
+                                    The ideal candidate is highly organized with a proven ability to 
+                                    multi-task especially in an agile, fast-paced, deadline driven 
+                                    environment. He or she should have a strong attention to detail and 
+                                    the ability to work independently and as part of a team in a fast 
+                                    paced environment.
+                                </li>
+
+                            </ol>
+                            <strong>DESIRED SKILLS & EXPERIENCE:</strong>
+                            <ol>
+                                <li>
+                                    At least 5 years of professional experience with at least 3 years of experience ecommerce managing marketing and merchandising programs.
+                                </li>
+                                <li>
+                                    Technical understanding of e-commerce web platforms and analytics. Magento experience a must.
+                                </li>
+                                <li>
+                                    Competency with HTML and CSS relative to CMS preferably Magento.
+                                </li>
+                                <li>
+                                    Understanding of front and back-end logistical online order placement and fulfillment cycles (payment process, back-end inventory fulfillment, order confirmation and shipping) to optimize online customer experience.
+                                </li>
+                                <li>
+                                    Experience constructing online marketing/advertising programs and site content.
+                                </li>
+                                <li>
+                                    Digital Marketing experience SEO, SEM, Affiliate, etc.with a heavy emphasis on email marketing.
+                                </li>
+                                <li>
+                                    Email Marketing experience with HTML coding, list management and email analytics are a must with a preference using the Bronto and Klaviyo email service providers.
+                                </li>
+                            </ol>
+
+                            <strong>DAY TO DAY:</strong>
+                            <ol>
+                                <li>
+                                    Manage site calendar regarding seasonal product launches, site enhancements, promotions, etc.
+                                </li>
+                                <li>
+                                    Manage all site content including daily management of home and category pages ensuring key goals are achieved.
+                                </li>
+                                <li>
+                                    Lead the delivery and trafficking of creative assets to/from site/graphic designers and developers.
+                                </li>
+                                <li>
+                                    Partner with third party partners to optimize opportunities to grow marketing programs and customer audience.
+                                </li>
+                                <li>
+                                    Monitor and report on key campaign metrics including open rates, conversions, CTR, and retention.
+                                </li>
+                                <li>
+                                    Job Type: Full-time
+                                </li>
+                            </ol>
+                            <strong>EXPERIENCE:</strong>
+                            <ol>
+                                <li>
+                                    Merchandising: 2 years (Preferred)
+                                </li>
+                                <li>
+                                    Email Marketing: 3 years
+                                </li>
+                                <li>
+                                    E-Commerce: 5 years (Preferred)
+                                </li>
+                            </ol>
+
+                    </li>
+                    <li class="careerbutton">
+                        <span>GLOBAL LICENSING COORDINATOR</span>
+                        <div>
+                            <strong>DESCRIPTION:</strong>
+                            <p>
+                                The Global Licensing Coordinator is responsible for providing departmental support for all facets of the Everlast Global Licensing Program including day to day maintenance of all licensing department reports/processes/forms/contact sheets, contract compliance, trademark infringement/protection, forecasting, royalty reporting, payments,and collections, and will interact with the licensees for the Everlast Global brand portfolio daily. The Global Licensing Coordinator role will also include the implementation of processes and initiatives to ensure cohesive, consistent worldwide brand presence, requiring strict attention to and enforcement of trademark registration requirements to ensure protection of the IBML trademarks. This position is based in Miami, FL.
+                            </p>
+                            <strong>RESPONSIBILITIES:</strong>
+                            <ol>
+                                <li>
+                                    Provide support in a broad range of compliance and operational issues/areas, assisting in the collection of licensees’ Annual Forecasts, Royalty Reports & Royalty Payments.
+                                </li>
+                                <li>
+                                    Prepare Licensee Annual Business Review templates and assist with preparing Annual Forecasts.
+                                </li>
+                                <li>
+                                    Maintain the Master Licensee List, Contract Summary Information Sheets, Contract Expiration Report, and Licensee Contact Lists
+                                </li>
+                                <li>
+                                    Manage the website Domain Registration and/or Transfer processes.
+                                </li>
+                                <li>
+                                    Coordinate Global Licensing Meetings together with Licensing Brand Managers &Marketing Team.
+                                </li>
+                                <li>
+                                    Assist Brand Manager & Directors with creation of New Business Plan templates for all new licensee business.
+                                </li>
+                                <li>
+                                    Create Welcome Kits for new licensees, providing Brand Guidelines & assistance in establishing access to Everlast’Brandfolder assets.
+                                </li>
+                                <li>
+                                    Assist in the collection of Trademark Proof of Use && the Trademark registration processes.
+                                </li>
+                                <li>
+                                    Coordinate and assist with Trademark infringement matters reported by Licensees.
+                                </li>
+                                <li>
+                                    Draft all Letters of Authorization for Licensees&Manufacturers.
+                                </li>
+                                <li>
+                                    Provide support to the licensing team.
+                                </li>
+                            </ol>
+                            <strong>QUALIFICATIONS:</strong>
+                            <ol>
+                                <li>
+                                    Strong project management and execution skills.
+                                </li>
+                                <li>
+                                    Highly detailed with strong organizational capabilities.
+                                </li>
+                                <li>
+                                    Clear written and oral communication skills.
+                                </li>
+                                <li>
+                                    Demonstrates a strong desire to exceed expectations inherent with the position.
+                                </li>
+                                <li>
+                                    Excels in a team environment, demonstrates an upbeat attitude, and ability to work effectively and professionally.
+                                </li>
+                                <li>
+                                    Bachelor’s degree or significant relevant experience preferred.
+                                </li>
+                                <li>
+                                    Proficient Computer Knowledge and user of Microsoft Office, Work, Teams, Excel, PowerPoint, Excel, and Word.
+                                </li>
+                                <li>
+                                    Ability to perform under deadlines and in a stressful environment.
+                                </li>
+                                <li>
+                                    Collaboration-oriented, with ability to work independently.
+                                </li>
+                                <li>
+                                    Proficiency in a foreign language a plus.
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="ShoppingCartComplete" class="popupDialog">
+        <span>Payment Complete</span>
+        <a href="#">OK</a>
+    </div>
+
+    <div id="FooterEmailComplete" class="popupDialog">
+        <span>Complete</span>
+        <a href="#">OK</a>
+    </div>
+
+    <div id="careerComplete" class="popupDialog">
+        <span>Complete</span>
+        <a href="#">OK</a>
+    </div>
+
+    <header>
+        <div class="headerTop">
+            <div>
+                <img src="icon/usa-icon.jpg" alt="usa">
+            </div>
+            <!-- 실제파일명 images/ subroot에 미리 생산해서 실제 이미지 이름 및 경로로 설정 -->
+            <span>THIS SITE SHIPS TO THE US, HI, AK AND PR ONLY</span>
+            <div>
+                <a href="#" data-popName="loginActive">Login</a>
+                <a href="#" data-popName="signUpActive">Sign up</a>
+                <a href="https://teameverlast.everlast.com/?nosto=5caf77ad7754880f32391035">#TeamEverlast Blog</a>
+            </div>
+        </div>
+        <div class="headerBottom">
+            <h1>
+                <a href="index_before.html">
+                    <img src="images/index/Everlast-HeaderLogo.jpg" alt="logo">
+                </a>
+            </h1>
+            <input type="button" value="FnbOpen" class="btn_open">
+            <nav>
+                <input type="button" value="FnbClose" class="btn_close">
+                <ol>
+                    <li>
+                        FIGHT
+                        <ul>
+                            <li>
+                                BOXING
+                                <ol>
+                                    <li><a href="li_boxingGlove_01.html">·Gloves</a></li>
+                                    <li><a href="li_boxingProtective_01.html">·Protective Equipment</a></li>
+                                    <li><a href="li_boxingHandWraps_01.html">·Hand Wraps</a></li>
+                                    <li><a href="li_boxingPunching_01.html">·Punching Bags</a></li>
+                                    <li><a href="li_boxingTraining_01.html">·Training Equipment</a></li>
+                                    <li><a href="li_boxingFootwear_01.html">·Footwear</a></li>
+                                    <li><a href="li_boxingNovelty_01.html">·Novelty &amp; Fan Gear</a></li>
+                                    <li><a href="li_boxingRings_01.html">·Rings &amp; Accessories</a></li>
+                                </ol>
+                            </li>
+                            <li>
+                                MMA
+                                <ol>
+                                    <li><a href="li_mmaGlove_01.html">·Gloves</a></li>
+                                    <li><a href="li_mmaProtective_01.html">·Protective Equipment</a></li>
+                                    <li><a href="li_mmaHandWraps_01.html">·Hand Wraps</a></li>
+                                    <li><a href="li_mmaPunching_01.html">·Punching Bags</a></li>
+                                    <li><a href="li_mmaTraining_01.html">·Training Equipment</a></li>
+                                    <li><a href="li_mmaFootwear_01.html">·Footwear</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        FITNESS
+                        <ul>
+                            <li><a href="li_fitnessTraining_01.html">TRAINNG</a></li>
+                            <li><a href="li_fitnessFightFitness_01.html">FIGHT FITNESS</a></li>
+                            <li><a href="li_fitnessGymBags_01.html">GYM BAGS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        DEALS
+                        <ul>
+                            <li>
+                                SALE
+                                <ol>
+                                    <li><a href="li_saleGlove_01.html">·Gloves</a></li>
+                                    <li><a href="li_saleFitness_01.html">·Fitness</a></li>
+                                    <li><a href="li_saleFootwear_01.html">·Footwaer</a></li>
+                                </ol>
+                            </li>
+                            <li>
+                                <a href="li_bundle_01.html">BUNDLE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="pro_team.html">PRO TEAM</a>
+                    </li>
+                    <li>
+                        <a href="glove_finder.html">GLOVE FINDER</a>
+                    </li>
+                </ol>
+            </nav>
+            <div>
+                <input type="search" id="headerSearch" placeholder="Search">
+                <input type="button" data-popName="ShoppingCartActive" value="shopping_cart" class="material-symbols-outlined">
+            </div>
+        </div>
+    </header>
+
+    <section class="contactUsPage">
+        <h2>CONTACT US</h2>
+        <address>
+            <ul>
+                <li>
+                    <strong>Phone:</strong>
+                    <span>
+                        <a href="tel:+18008217930">800.821.7930</a>
+                        <!-- <a href="mailto:"></a> -->
+                    </span>
+                    <span>(Monday - Friday 8:00 a.m. - 5:00 p.m. CST)</span>
+                </li>
+                <li>
+                    <strong>Live Chat:</strong>
+                    <span>(Monday - Friday 8:00 a.m. - 5:00 p.m. CST)</span>
+                    <span>
+                        Chat with us
+                    </span>
+                </li>
+                <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:orderpro@everlast.com">orderpro@everlast.com</a>
+                </li>
+                <li>
+                    <strong>Fax:</strong>
+                    <a href="tel:+1800.480.0348">800.480.0348</a>
+                </li>
+                <li>
+                    <strong>Mailing Address:</strong>
+                    <span>Everlast Customer Service</span>
+                    <span>1900 Highway DD</span>
+                    <span>Moberly, MO 65270</span>
+                </li>
+                <li>
+                    <strong>For sponsorship inquiries, please send an email to <a href="mailto:sponsorships@everlast.com">sponsorships@everlast.com</a></strong>
+                </li>
+            </ul>
+        </address>
+    </section>
+
+
+    <footer>
+        <div class="footerTop">
+            <div>
+                <h2><img src="images/index/header_logo.jpg" alt="footerLogo"></h2>
+                <p>
+                    <strong>SIGN UP &amp; TAKE 15% OFF</strong>
+                    Save on your order and get eamil only offers when you join
+                </p>
+                <form>
+                    <fieldset>
+                        <input type="email" placeholder="Your Email Adress">
+                        <input type="submit" value="Continue">
+                    </fieldset>
+                </form>
+                <ul>
+                    <li><a href="#"><img src="images/index/f.jpg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/index/t.jpg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/index/p.jpg" alt="pin"></a></li>
+                    <li><a href="#"><img src="images/index/i.jpg" alt="instar"></a></li>
+                    <li><a href="#"><img src="images/index/y.jpg" alt="youtube"></a></li>
+                </ul>
+                <!-- ul -->
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        ABOUT US
+                        <ol>
+                            <li><a href="about_everlast.html">About Everlast</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        CUSTOMER SERVICE
+                        <ol>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                            <li><a href="shipping_information.html">Shipping Information</a></li>
+                            <li><a href="return_exchanges.html">Returns &amp; Exchanges</a></li>
+                            <li><a href="warranty_information.html">Warranty Information</a></li>
+                            <li><a href="size_chart.html">Size Charts</a></li>
+                            <li><a href="everlast_faqs.html">FAQ</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        COMPANY
+                        <ol>
+                            <li><a href="wholesale.html">Wholesale</a></li>
+                            <li><a href="GSA_Information.html">GSA Information</a></li>
+                            <li><a href="affiliate_program.html">Affiliate Program</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <ol>
+                            <li>CONNECT</li>
+                            <li><a href="#">800.821.7930</a></li>
+                            <li>MONDAY-FRIDAY</li>
+                            <li>8 AM - 5 PM CST</li>
+                            <li><img src="icon/footer-icon.jpg" alt="footerIcon"></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <!-- 중첩추가 -->
+            <!-- <img src="../../자료/index/icon/usa-icon.jpg" alt="usa"> -->
+            <div>
+                <span>© 2022 Everlast Worldwide, Inc.</span>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="terms_of_use.html">Terms Of Use</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

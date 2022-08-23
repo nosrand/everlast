@@ -1,0 +1,2795 @@
+
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul li:nth-of-type(1){
+    background-image: url("../images/detail/0star.jpg");
+    background-repeat: no-repeat;
+    background-size: 125px;
+    background-position: 0 28px;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul li:nth-of-type(1).oneStar{
+    background-image: url("../images/detail/1star.jpg");
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul li:nth-of-type(1).twoStar{
+    background-image: url("../images/detail/2star.jpg");
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul li:nth-of-type(1).threeStar{
+    background-image: url("../images/detail/3star.jpg");
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul li:nth-of-type(1).fourStar{
+    background-image: url("../images/detail/4star.jpg");
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul li:nth-of-type(1).fiveStar{
+    background-image: url("../images/detail/5star.jpg");
+}
+
+section.listPageContent > ol li > input[value="wishheart"].active,
+section.productExplain div:nth-of-type(1) > div > input[value="wishheart"].active{
+    background-image: url("../icon/favorite_FILL0_wght400_GRAD0_opsz48.svg");
+}
+
+.gloveFinderContent ul li ol li{
+  overflow: hidden;
+}
+.gloveFinderContent ul li ol li:hover mark{
+  animation-duration: 1s; 
+  animation-fill-mode: both;
+  animation-direction: normal;
+  display: block; background-color: rgba(0, 0, 0, 0.6); position: absolute;
+  bottom: 40%;
+}
+section.gloveFinderContent ul li ol li:first-of-type:hover mark{
+  animation-name: leftMove;
+  padding: 20px 0 20px 6%;
+}
+
+section.gloveFinderContent ul li ol li:last-of-type:hover mark{
+    animation-name: rightMove;
+    padding: 20px 6% 20px 0; text-align: right;
+}
+section.gloveFinderContent ul li.three ol li:nth-of-type(2):hover mark{
+    animation-name: centerMove;
+    padding: 20px 0; text-align: center;
+}
+
+@keyframes leftMove{
+    0%{
+        right: -80%;
+    }100%{
+        right: 0;
+    }
+}
+@keyframes rightMove{
+    0%{
+        left: -80%;
+    }100%{
+        left: 0;
+    }
+}
+@keyframes centerMove{
+    0%{
+        bottom: -80%;
+    }100%{
+        bottom: 40%;
+    }
+}
+
+section.gloveFinderContent ul li ol li:hover mark:after {
+    content: '';
+    display: block;
+    width: 92%;
+    height: 1px;
+    position: absolute;
+    bottom: 30px;
+    padding-left: 2%;
+    background: white;
+}
+section.gloveFinderContent ul li ol li:first-of-type:hover mark:after{
+    right: 0;
+}
+section.gloveFinderContent ul li ol li:nth-of-type(2):hover mark:after{
+    left: 3%;
+}
+section.gloveFinderContent ul li ol li:last-of-type:hover mark:after{
+    left: 0;
+}
+
+.productExplain div:nth-of-type(3) ul li input{
+    cursor: pointer;
+}
+
+.listPageContent aside ol li:last-of-type div.priceBar{
+    width: 100%; position: relative;
+}
+
+body{
+    height: 100%;
+}
+
+.signUpContent{
+    position: relative;
+}
+.signUpContent div{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute; right: 0; z-index: 1;
+}
+.signUpContent div span{
+    display: block; color: white;
+}
+.signUpContent div span:nth-of-type(2){
+    text-align: right;
+}
+.signUpContent div mark{
+    position: absolute; color: #bd0000;
+    background-color: rgba(0, 0, 0, 0); top: 40px;
+    z-index: -1; opacity: 0.6;
+}
+.signUpContent div input{
+    border-style: none; background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ff0000; color: white;
+    float: right; margin-right: 3.2%; box-sizing: border-box; padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.ProductContent h2{
+    font-weight: 700; margin-bottom: 30px
+}
+.ProductContent ul{
+    height: 100%;
+}
+.ProductContent ul > li{
+    list-style: none; position: relative; color: white;
+    text-align: center; justify-content: center; display: flex; align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ProductContent ul > li:nth-of-type(1){
+    background-image: url('../images/index/Product_Main.jpg');   
+}
+.ProductContent ul > li:nth-of-type(2){
+    background-image: url('../images/index/Product_Main2.jpg');
+}
+.ProductContent ul > li:nth-of-type(3){
+    background-image: url('../images/index/Product_Main3.jpg');
+}
+.ProductContent ul li ol{
+    position: absolute; top: 0; left: 0;  display: none;
+}
+.ProductContent ul li ol li{
+    list-style: none; position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ProductContent ul li:nth-of-type(1):hover ol{
+    height: 100%; width: 100%; display: block;
+}
+.ProductContent ul li:not(:nth-of-type(1)):hover ol{
+    height: 100%; width: 100%; display: block;
+}
+.ProductContent ul li:not(:nth-of-type(1)) ol::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.ProductContent ul li:not(:nth-of-type(1)) ol li{
+    float: left;
+}
+.ProductContent ul li:nth-of-type(1) ol li:nth-of-type(1){
+    background-image: url('../images/index/Product_FITNESS_hover.jpg');
+}
+.ProductContent ul li:nth-of-type(1) ol li:nth-of-type(2){
+    background-image: url('../images/index/Product_FITNESS_hover2.jpg');
+}
+.ProductContent ul li:nth-of-type(1) ol li:nth-of-type(3){
+    background-image: url('../images/index/Product_FITNESS_hover3.jpg');
+}
+.ProductContent ul li:nth-of-type(2) ol li:nth-of-type(1){
+    background-image: url('../images/index/Product_Fight_hover.jpg');
+}
+.ProductContent ul li:nth-of-type(2) ol li:nth-of-type(2){
+    background-image: url('../images/index/Product_Fight_hover2.jpg');
+}
+.ProductContent ul li:nth-of-type(3) ol li:nth-of-type(1){
+    background-image: url('../images/index/Product_SALE_hover.jpg');
+}
+.ProductContent ul li:nth-of-type(3) ol li:nth-of-type(2){
+    background-image: url('../images/index/Product_SALE_hover2.jpg');
+}
+.ProductContent ul li ol li span{
+    display: block; width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px 0; position: absolute; bottom: 0;
+}
+.ProductContent ul li ol li a{
+    text-decoration: none; color: white;
+    justify-content: center; display: flex; align-items: center;
+    height: 100%; width: 100%; display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.ProductContent ul li ol li:hover a{
+    display: block;
+    justify-content: center; display: flex; align-items: center;
+}
+
+.bestSellerContent{
+    background-color: #f1e9e3;
+}
+.bestSellerContent h2{
+    font-weight: 700; margin-bottom: 40px;
+}
+.bestSellerContent ul li{
+    list-style: none;
+}
+.bestSellerContent ul li figure img{
+    margin-bottom: 20px; width: 100%;
+}
+.bestSellerContent ul.slider li figure figcaption dl dt{
+    font-weight: 700; margin-bottom: 15px;
+}
+.proAndFinderContent ul li{
+    list-style: none; position: relative;
+}
+.proAndFinderContent ul > li{
+    text-align: center; justify-content: center; display: flex; align-items: center;
+    background-repeat: no-repeat;
+}
+.proAndFinderContent ul > li:first-of-type{
+    background-image: url("../images/index/ProTeam2.jpg");
+}
+.proAndFinderContent ul > li:last-of-type{
+    background-image: url("../images/index/gloveFinder3.jpg");
+}
+.proAndFinderContent ul > li h3{
+    color: white;
+}
+.proAndFinderContent ul li div{
+    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.proAndFinderContent ul li:hover div{
+    display: flex; flex-flow: column wrap; justify-content: center;
+    align-content: center; 
+}
+.proAndFinderContent ul li:hover h3{
+    display: none;
+}
+.proAndFinderContent ul li div span{
+    display: block; width: 100%; color: white;
+    margin-bottom: 60px;
+}
+.proAndFinderContent ul > li div a{
+    text-decoration: none; color: white; width: 30%; text-align: center;
+    margin: 0 auto; border: 1px solid #cf0000;
+}
+
+.everlastSNSContent{
+    height: 100%; background-color: #e2758c;
+}
+.everlastSNSContent h2{
+    margin-bottom: 30px;
+}
+.everlastSNSContent ul::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.everlastSNSContent ul li{
+    list-style: none;
+}
+.everlastSNSContent ul > li{
+    float: left; width: 32.833%; 
+}
+.everlastSNSContent ul > li:not(:nth-of-type(1)){
+    margin-left: 0.75%;
+}
+.everlastSNSContent ul li ol::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.everlastSNSContent ul li ol li{
+    float: left; position: relative;
+}
+.everlastSNSContent ul li:nth-of-type(1) ol li:nth-of-type(1){
+    width: 100%;
+}
+.everlastSNSContent ul li:nth-of-type(1) ol li:nth-of-type(3),
+.everlastSNSContent ul li:nth-of-type(2) ol li:nth-of-type(2n),
+.everlastSNSContent ul li:nth-of-type(3) ol li:nth-of-type(2){
+    margin-left: 2%;
+}
+.everlastSNSContent ul li:nth-of-type(1) ol li:not(:nth-of-type(1)),
+.everlastSNSContent ul li:nth-of-type(3) ol li:not(:nth-of-type(3)){
+    width: 49%;
+}
+.everlastSNSContent ul li:nth-of-type(2) ol li{
+    width: 49%;
+}
+.everlastSNSContent ul li:nth-of-type(2) ol li:not(:nth-of-type(2n-1)){
+    margin-bottom: 1.25%;
+}
+.everlastSNSContent ul li:nth-of-type(3) ol li:nth-of-type(3){
+    width: 100%;
+}
+.everlastSNSContent ul li ol li > img{
+    width: 100%;
+}
+.everlastSNSContent ul li ol li:hover div{
+    display: block; cursor: pointer;
+    display: flex; justify-content: center; align-items: center;
+}
+.everlastSNSContent ul li ol li div{
+    height: 100%; width: 100%; position: absolute; top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+.everlastSNSContent ul li ol li div img{
+    min-width: 30px; height: 30px;
+}
+
+section.listPageContent h2{
+    display: block; text-align: center; font-size: 36px; font-weight: 700;
+    margin: 0 0 30px 0;
+}
+section.listPageContent nav{
+    display: block; text-align: center; margin-bottom: 80px;
+}
+section.listPageContent nav ul li{
+    display: inline-block;
+}
+section.listPageContent nav ul li:not(:first-of-type){
+    margin-left: 1.58%;
+}
+section.listPageContent nav ul li a{
+    text-decoration: none; font-weight: 300; color: black; opacity: 0.6;
+}
+section.listPageContent nav ul li a:hover,
+section.listPageContent nav ul li a.active{
+    opacity: 1; border-bottom: 1px solid black; padding-bottom: 5px;
+}
+section.listPageContent > div{
+    display: block; margin-bottom: 20px;
+}
+section.listPageContent > div input{
+    border-style: none;  background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    background-image: url('../icon/sort_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    cursor: pointer;
+}
+section.listPageContent > div span{
+    float: right;
+}
+section.listPageContent > div span strong{
+    font-size: 20px; font-weight: 700;
+}
+section.listPageContent::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.listPageContent aside{
+    border: 2px solid #efefef;
+    box-sizing: border-box; padding: 40px 1.316%;
+}
+section.listPageContent aside ol > li:not(:last-of-type){
+    list-style: none; margin-bottom: 40px; 
+}
+section.listPageContent aside ol li label{
+    display: block; margin-bottom: 25px;
+}
+section.listPageContent aside ol li:nth-of-type(1) .componentSelect select{
+    width: 100%; height: 40px; border-radius: 10px; box-sizing: border-box;
+    border: 2px solid #efefef; color: #a9a9a9; padding-left: 3.65%;
+}
+section.listPageContent aside ol li:nth-of-type(2) > ul li{
+    display: inline-block; margin-left: 4.357%;
+}
+section.listPageContent aside ol li:nth-of-type(2) ul li input{
+    border-style: none; background-color: rgba(0, 0, 0, 0);
+    text-indent: -9999px; margin-bottom: 10px; cursor: pointer;
+    background-repeat: no-repeat;
+}
+section.listPageContent aside ol li strong{
+    font-weight: 400; margin-bottom: 15px; display: block;
+}
+section.listPageContent aside ol li div:nth-of-type(2){
+    width: 100%; position: relative; 
+}
+section.listPageContent aside ol li div:nth-of-type(2) span{
+    font-size: 12px; font-weight: 900; position: absolute;
+}
+section.listPageContent aside ol li div:nth-of-type(2) span:nth-of-type(2){
+    left: 59%;
+}
+section.listPageContent > ol{
+    width: 100%; margin-bottom: 50px;
+}
+section.listPageContent > ol::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.listPageContent > ol > li{
+    list-style: none; float: left; margin-bottom: 20px;
+    position: relative; background-color: #efefef;
+}
+section.listPageContent > ol li > input[value="wishheart"]{
+    width: 8%; height: 25px; position: absolute;
+    border-style: none; text-indent: -9999px; background-color: rgba(0, 0, 0, 0);
+    background-image: url("../icon/heart_broken_FILL0_wght400_GRAD0_opsz48.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+section.listPageContent.active > ol li > input[value="wishheart"].active{
+    background-image: url('../icon/favorite_FILL0_wght400_GRAD0_opsz48.svg');
+}
+section.listPageContent > ol li a img{
+    width: 100%;
+}
+section.listPageContent > ol li div{
+    padding: 15px 3.857%;
+}
+section.listPageContent > ol li div h3{
+    font-size: 20px; font-weight: 700; margin-bottom: 20px;
+}
+section.listPageContent > ol li div > span{
+    font-size: 20px;
+}
+section.listPageContent > ol li div del{
+    font-size: 20px;
+}
+section.listPageContent > ol li div ul{
+    float: right; text-align: right;
+}
+section.listPageContent > ol li div ul li{
+    list-style: none; display: inline-block; line-height: 20px;
+}
+section.listPageContent > ol li div ul li input{
+    border-style: none; background-color: rgba(0, 0, 0, 0);
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+section.listPageContent > ol li div ul li:not(:nth-of-type(1)){
+    margin-left: 14.72;
+}
+section.listPageContent > ol li div ul li input:hover{
+    min-width: 25px; height: 25px;
+    background-size: 25px;
+}
+section.listPageContent.active aside{
+    display: block;
+}
+section.listPageContent.active > div input{
+    background-image: url('../icon/close_FILL0_wght400_GRAD0_opsz48.svg');
+}
+
+.Description{
+    position: fixed; z-index: 1000;
+    font-weight: 700; background-color: #efefef
+}
+.Description.active{
+    display: block;
+}
+.Description.active p{
+    margin-bottom: 15px;
+}
+.Description.active ul > li{
+    margin-bottom: 15px;
+}
+.Description.active .btn_close{
+    background-image: url('../icon/close_FILL0_wght400_GRAD0_opsz48.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: none;
+    text-indent: -9999px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute; right: 15px; top: 15px;
+    width: 30px; height: 30px; cursor: pointer;
+}
+
+section.productExplain div::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.productExplain div:nth-of-type(1) ol{
+    position: absolute; right: 0; top: 0; width: 8.5% 
+}
+section.productExplain div:nth-of-type(1) ol > li:nth-of-type(1){
+    margin-bottom: 10px;
+}
+section.productExplain div:nth-of-type(1) ol > li{
+    opacity: 0.6; cursor: pointer; margin-bottom: 10px
+}
+section.productExplain div:nth-of-type(1) > div{
+    width: 89%; position: relative;
+}
+section.productExplain div:nth-of-type(1) > div img,
+section.productExplain div:nth-of-type(1) ol > li img{
+    width: 100%;
+}
+section.productExplain div:nth-of-type(1) ul li.active{
+    display: block;
+}
+section.productExplain div:nth-of-type(1) ol > li.active{
+    opacity: 1;
+}
+section.productExplain div:nth-of-type(1) > div > input[value="wishheart"]{
+    width: 25px; height: 25px; position: absolute; right: 1%; bottom: 5%;
+    border-style: none; text-indent: -9999px; background-color: rgba(0, 0, 0, 0);
+    background-image: url("../icon/heart_broken_FILL0_wght400_GRAD0_opsz48.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+section.productExplain div:nth-of-type(2) h2{
+    margin-bottom: 15px;
+}
+section.productExplain div:nth-of-type(2) div:nth-of-type(1){
+    display: block; width: 100%; position: relative;
+}
+section.productExplain div:nth-of-type(2) div:nth-of-type(1) img{
+    position: absolute; top: 6.25px;
+}
+section.productExplain div:nth-of-type(2) div:nth-of-type(1) span{
+    color: #a9a9a9; font-weight: 700;
+}
+section.productExplain div:nth-of-type(2) div:nth-of-type(1) mark{
+    color: #ac0000; text-align: right; font-weight: 400;
+    font-style: normal; float: right; background-color: rgba(0, 0, 0, 0);
+}
+section.productExplain div:nth-of-type(2) > div:not(:nth-of-type(1)){
+    display: inline-block;
+}
+section.productExplain div:nth-of-type(2) > div label{
+    display: block; margin-bottom: 10px; font-weight: 700;
+}
+section.productExplain div:nth-of-type(2) > div:nth-of-type(2) span select{
+    width: 100%; height: 45px; border-radius: 10px; border: 1px solid #a9a9a9;
+    color: #a9a9a9;  padding-left: 3%;
+}
+section.productExplain div:nth-of-type(2) > div:nth-of-type(3){
+    margin-left: 12%;
+}
+section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul li input{
+    border-style: none; background-color: rgba(0, 0, 0, 0);
+    text-indent: -9999px; background-repeat: no-repeat; margin-bottom: 10px; 
+}
+section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul > li{
+    display: inline-block; 
+}
+section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul > li:not(:last-of-type){
+    margin-right: 10px;
+}
+section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input{
+    border-style: none; color: white; font-weight: 700; cursor: pointer;
+}
+section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input:first-of-type{
+    background-color: #cf0000;
+}
+section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input:last-of-type{
+    background-color: #acacac;
+}
+section.reviewRatingAndWrite{
+    border-bottom: 1px solid #dfdfdf;
+}
+section.reviewRatingAndWrite h2{
+    font-weight: 700; display: block; border-bottom: 2px solid #dfdfdf;
+    padding-bottom: 20px;
+}
+section.reviewRatingAndWrite h2 small{
+    color: #acacac;
+}
+section.reviewRatingAndWrite > div{
+    padding: 25px 6.75%;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) > img{
+    padding: 6px 0;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) > span{
+    font-size: 50px;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) > p{
+    margin: 25px 0 20px; color: #acacac;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) > p strong{
+    font-size: 20px; display: block; margin-bottom: 10px;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li{
+    width: 100%; padding: 15px 0; position: relative;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li:hover{
+    background-color: #dfdfdf;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li strong{
+    background-image: url('../images/detail/star.jpg');
+    background-repeat: no-repeat;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li meter{
+    height: 28px; margin-left: 4.8%;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li meter::-webkit-meter-optimum-value{
+    background: red;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li > span{
+    color: #acacac; position: absolute; right: 1%;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) h3{
+    font-size: 20px; margin-bottom: 25px;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul > li{
+    float: left; margin-bottom: 20px;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul > li:not(:nth-of-type(n+2):nth-of-type(-n+3)){
+    width: 100%;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul > li:nth-of-type(n+2):nth-of-type(-n+3){
+    width: 48%;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul > li:nth-of-type(3){
+    margin-left: 4%;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul li label{
+    display: block; margin-bottom: 15px;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul li:nth-of-type(1) input{
+    min-width: 21px; height: 21px;
+    border-style: none; background-color: rgba(0, 0, 0, 0); text-indent: -9999px;
+    cursor: pointer;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul > li:not(:nth-of-type(1)) input{
+    width: 100%; box-sizing: border-box; border-style: none; border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 10px; color: #acacac;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset ul > li:not(:nth-of-type(1)) textarea{
+    width: 100%; height: 100px; padding: 5px 0 0 1%;
+}
+section.reviewRatingAndWrite > div > div:nth-of-type(2) form fieldset > input{
+    height: 40px; width: 25%; border-style: none; background-color: #ac0000; color: white;
+    float: right; cursor: pointer;
+}
+section.reviewBody{
+    margin-bottom: 50px; padding: 25px 2.5%;
+}
+section.reviewBody h2{
+    color: #626262; margin-bottom: 35px;
+}
+section.reviewBody ul::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.reviewBody ul li h3 small{
+    display: block; font-size: 14px; margin: 10px 0;
+}
+section.reviewBody ul li img{
+    display: block; width: 20.27%; margin-bottom: 10px;
+}
+section.reviewBody ul li time{
+    font-size: 14px; font-weight: 900;
+}
+section.reviewBody ul li p{
+    margin: 20px 0 30px 0; font-size: 16px; width: 90%;
+    max-height: 79px; height: 100vh; 
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+section.reviewBody ul li p strong{
+    display: block; font-size: 20px; font-weight: 700; margin-bottom: 10px;
+}
+section.reviewBody ul li > div label{
+    font-size: 14px; margin-right: 3.125%;
+}
+section.reviewBody ul li > div input{
+    border-style: none; background-color: rgba(0, 0, 0, 0);
+    padding-left: 20px; height: 25px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-indent: 5px;
+    cursor: pointer;
+}
+section.reviewBody ul li > div input:nth-of-type(1){
+    background-image: url("../icon/thumb_up_FILL0_wght400_GRAD0_opsz48.svg");
+}
+section.reviewBody ul li > div input:nth-of-type(2){
+    background-image: url("../icon/thumb_down_FILL0_wght400_GRAD0_opsz48.svg");
+}
+
+section.proTeamContent h2{
+    margin-bottom: 50px;
+}
+section.proTeamContent h2 p{
+    margin: 15px 0 25px; color: #a9a9a9;
+}
+section.proTeamContent ul::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.proTeamContent ul li{
+    margin-bottom: 30px; background-color: #efefef;
+    max-width: 1600px; background-repeat: no-repeat; background-size: 56.25% 100%;
+}
+section.proTeamContent ul li.left{
+    float: left;
+}
+section.proTeamContent ul li.right{
+    float: right;
+    background-position: 100%;
+}
+section.proTeamContent ul li > div:nth-of-type(1) h3{
+    font-weight: 300;
+    background-image: url('../images/proTeam/textBar.jpg');
+    background-repeat: no-repeat;
+}
+section.proTeamContent ul li > div:nth-of-type(1) small{
+    color: #626262; display: block; font-weight: 700;
+}
+section.proTeamContent ul li > div:nth-of-type(1) q{
+    color: #a9a9a9;
+}
+section.proTeamContent ul li:nth-of-type(1){
+    background-image: url('../images/proTeam/celebrity/DEONTAYWILDER/main1.jpg');
+}
+section.proTeamContent ul li:nth-of-type(2){
+    background-image: url("../images/proTeam/celebrity/CONORBENN/img/main1.jpg");
+}
+section.proTeamContent ul li:nth-of-type(3){
+    background-image: url("../images/proTeam/celebrity/DALTONSMITH/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(4){
+    background-image: url("../images/proTeam/celebrity/LEAHMCCOURT/img/Hgz9xH_F-26c8.jpg");
+}
+section.proTeamContent ul li:nth-of-type(5){
+    background-image: url("../images/proTeam/celebrity/RAMLAALI/img/main1.jpg");
+}
+section.proTeamContent ul li:nth-of-type(6){
+    background-image: url("../images/proTeam/celebrity/SOULEYMANECISSOKHO/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(7){
+    background-image: url("../images/proTeam/celebrity/TIMTSZYU/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(8){
+    background-image: url("../images/proTeam/celebrity/WILLYHUTCHINSON/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(9){
+    background-image: url("../images/proTeam/celebrity/ALJAMAINSTERLING/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(10){
+    background-image: url("../images/proTeam/celebrity/PATRICIOMANUEL/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(11){
+    background-image: url("../images/proTeam/celebrity/HEATHERHARDY/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(12){
+    background-image: url("../images/proTeam/celebrity/JARRETTHURD/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(13){
+    background-image: url("../images/proTeam/celebrity/JOSHUABUATSI/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(14){
+    background-image: url("../images/proTeam/celebrity/FRANSONETMARTINEZ/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(15){
+    background-image: url("../images/proTeam/celebrity/KARLOSBALDERA/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(16){
+    background-image: url("../images/proTeam/celebrity/VERGILORTIZ/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(17){
+    background-image: url("../images/proTeam/celebrity/RANDYBROWN/img/randy-brown-ufc-sao-paulo-2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(18){
+    background-image: url("../images/proTeam/celebrity/MIKAELAMAYER/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(19){
+    background-image: url("../images/proTeam/celebrity/DUSTINPOIRIER/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(20){
+    background-image: url("../images/proTeam/celebrity/LEOSANTACRUZ/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(21){
+    background-image: url("../images/proTeam/celebrity/ERROLSPENCEJR/img/main2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(22){
+    background-image: url("../images/proTeam/celebrity/JASONQUIGLEY/img/main2.jpg");
+}
+section.proTeamContent ul li:hover div:nth-of-type(2){
+    display: block; background-color: rgba(0, 0, 0, 0.6); height: 100%; 
+}
+section.proTeamContent ul li:hover div:nth-of-type(2){
+    color: white;
+    display: flex; flex-direction: column; justify-content: center;
+}
+section.proTeamContent ul li:hover{
+    background-size: cover;
+}
+section.proTeamContent ul li:hover p{
+    margin-bottom: 35px;
+}
+section.proTeamContent ul li:nth-of-type(1):hover{
+    background-image: url("../images/proTeam/celebrity/DEONTAYWILDER/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(2):hover{
+    background-image: url("../images/proTeam/celebrity/CONORBENN/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(3):hover{
+    background-image: url("../images/proTeam/celebrity/DALTONSMITH/img/hover3.jpg");
+}
+section.proTeamContent ul li:nth-of-type(4):hover{
+    background-image: url("../images/proTeam/celebrity/LEAHMCCOURT/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(5):hover{
+    background-image: url("../images/proTeam/celebrity/RAMLAALI/img/hove2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(6):hover{
+    background-image: url("../images/proTeam/celebrity/SOULEYMANECISSOKHO/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(7):hover{
+    background-image: url("../images/proTeam/celebrity/TIMTSZYU/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(8):hover{
+    background-image: url("../images/proTeam/celebrity/WILLYHUTCHINSON/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(9):hover{
+    background-image: url("../images/proTeam/celebrity/ALJAMAINSTERLING/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(10):hover{
+    background-image: url("../images/proTeam/celebrity/PATRICIOMANUEL/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(11):hover{
+    background-image: url("../images/proTeam/celebrity/HEATHERHARDY/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(12):hover{
+    background-image: url("../images/proTeam/celebrity/JARRETTHURD/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(13):hover{
+    background-image: url("../images/proTeam/celebrity/JOSHUABUATSI/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(14):hover{
+    background-image: url("../images/proTeam/celebrity/FRANSONETMARTINEZ/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(15):hover{
+    background-image: url("../images/proTeam/celebrity/KARLOSBALDERA/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(16):hover{
+    background-image: url("../images/proTeam/celebrity/VERGILORTIZ/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(17):hover{
+    background-image: url("../images/proTeam/celebrity/RANDYBROWN/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(18):hover{
+    background-image: url("../images/proTeam/celebrity/MIKAELAMAYER/img/hoer2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(19):hover{
+    background-image: url("../images/proTeam/celebrity/DUSTINPOIRIER/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(20):hover{
+    background-image: url("../images/proTeam/celebrity/LEOSANTACRUZ/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(21):hover{
+    background-image: url("../images/proTeam/celebrity/ERROLSPENCEJR/img/hover2.jpg");
+}
+section.proTeamContent ul li:nth-of-type(22):hover{
+    background-image: url("../images/proTeam/celebrity/JASONQUIGLEY/img/hover2.jpg");
+}
+
+section.gloveFinderContent{
+    background-color: black;
+}
+section.gloveFinderContent > div{
+    position: relative; display: none;
+}
+section.gloveFinderContent > div video{
+    width: 100%;
+}
+section.gloveFinderContent > div > div{
+    position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex; justify-content: center; align-items: center;
+}
+section.gloveFinderContent > div > div input{
+    border: 1px solid #ff0000;
+    background-color: rgba(0, 0, 0, 0); color: white;
+    cursor: pointer;
+}
+section.gloveFinderContent ul li{
+    width: 100%; background-color: black; color: white; position: relative;
+    cursor: pointer; display: none;
+}
+section.gloveFinderContent ul li span{
+    position: absolute; top: 50px; z-index: 10;
+    width: 100%; display: flex; justify-content: center;
+}
+section.gloveFinderContent ul li ol::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.gloveFinderContent ul li ol li{
+    float: left; position: relative;
+    display: flex; justify-content: center; align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.gloveFinderContent ul li.two ol li{
+    width: 50%;
+}
+section.gloveFinderContent ul li.three ol li{
+    width: 33.33%;
+}
+section.gloveFinderContent ul li ol li mark{
+    background-color: rgba(0, 0, 0, 0.6); color: white; font-style: normal;
+    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+}
+section.gloveFinderContent ul li:nth-of-type(1) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/boxing/boxing.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(1) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/mma/mma2.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(2) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/KICKBOXING/KICKBOXINGhover.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(2) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/TRADITIONAL/TRADITIONAL.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(3) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/yes/yes.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(3) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/no/nohover.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(4) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/pro/pro.jpg');
+    background-position: -100px;
+}
+section.gloveFinderContent ul li:nth-of-type(4) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/amature/amature.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(5) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/LACED/LACED.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(5) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/HOOK&LOOP/HOOK&LOOP.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(6) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/power/power.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(6) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/PROTECTION/PROTECTION.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(6) ol li:nth-of-type(3){
+    background-image: url('../images/gloveFinder/HYBRID/HYBRID.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(7) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/ADVANCED/ADVANCED.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(7) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/INTERMEDIATE/INTERMEDIATE.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(7) ol li:nth-of-type(3){
+    background-image: url('../images/gloveFinder/BEGINNER/BEGINNER.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(8) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/home/home.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(8) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/GROUPCLASS/GROUP\ CLASS.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(8) ol li:nth-of-type(3){
+    background-image: url('../images/gloveFinder/GYM/GYM.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(9) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/DAILY/DAILY.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(9) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/WEEKLY/WEEKLY.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(9) ol li:nth-of-type(3){
+    background-image: url('../images/gloveFinder/MONTHLY/MONTHLY.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(10) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/BAG/bag.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(10) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/MITTS/MITT.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(10) ol li:nth-of-type(3){
+    background-image: url('../images/gloveFinder/both/both.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(11) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/mma/mma.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(11) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/MUAYTHAI/MUAY\ THAI.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(11) ol li:nth-of-type(3){
+    background-image: url('../images/gloveFinder/KICKBOXING/KICKBOXING.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(12) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/yes/yes.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(12) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/no/nohover.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(13) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/yes/yes.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(13) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/no/nohover.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(14) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/TRADITIONAL/TRADITIONAL.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(14) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/FINGERLESS/fingerless.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(15) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/ADVANCED/ADVANCED.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(15) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/INTERMEDIATE/INTERMEDIATE.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(15) ol li:nth-of-type(3){
+    background-image: url('../images/gloveFinder/BEGINNER/BEGINNER.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(16) ol li:nth-of-type(1){
+    background-image: url('../images/gloveFinder/BEGINNER/BEGINNER.jpg');
+}
+section.gloveFinderContent ul li:nth-of-type(16) ol li:nth-of-type(2){
+    background-image: url('../images/gloveFinder/FINGERLESS/fingerless.jpg');
+}
+section.gloveFinderContent ul li.active{
+    display: block;
+}
+section.gloveFinderContent > div.active{
+    display: block;
+}
+
+section.aboutEverlast h2{
+    font-weight: 700; padding: 30px 0;
+}
+section.aboutEverlast > div:nth-of-type(1){
+    width: 100%; overflow-y: hidden;
+    background-image: url("../images/footerPage/abouteverlast.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+section.aboutEverlast div:nth-of-type(1) > div{
+    text-align: center;
+}
+section.aboutEverlast div:nth-of-type(1) h3{
+    font-weight: 100; color: white; margin-bottom: 50px;
+}
+section.aboutEverlast div:nth-of-type(1) p{
+    color: #b1b1b1; margin: 0 auto;
+}
+section.aboutEverlast div:nth-of-type(2) h3{
+    font-weight: 300; margin-bottom: 50px;
+}
+section.aboutEverlast div:nth-of-type(2) ol li::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.aboutEverlast div:nth-of-type(2) ol li{
+    width: 100%;
+}
+section.aboutEverlast div:nth-of-type(2) ol li:not(:last-of-type){
+    margin-bottom: 30px;
+}
+section.aboutEverlast div:nth-of-type(2) ol li:last-of-type{
+    margin-bottom: 50px;
+}
+section.aboutEverlast div:nth-of-type(2) ol li img{
+    height: 100%;
+}
+section.aboutEverlast div:nth-of-type(2) ol li:nth-of-type(2n+1) img{
+    float: left; 
+}
+section.aboutEverlast div:nth-of-type(2) ol li:nth-of-type(2n) img{
+    float: right; 
+}
+section.aboutEverlast div:nth-of-type(2) ol li p{
+    color: #727272; display: inline-block;
+}
+
+section.contactUsPage{
+    background-image: url("../images/footerPage/ContactUs.jpg");
+}
+section.contactUsPage address ul::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.contactUsPage address ul li{
+    float: left; font-style: normal;
+}
+section.contactUsPage address ul li:not(:last-of-type){
+    margin-bottom: 50px;
+}
+section.contactUsPage address ul li:not(:nth-of-type(n+1):nth-of-type(-n+4)){
+    width: 100%;
+}
+section.contactUsPage address ul li:not(:last-of-type) strong{
+    margin-bottom: 30px; display: block;
+}
+section.contactUsPage address ul li span{
+    margin-bottom: 15px;
+}
+section.contactUsPage address ul li:last-of-type a{
+    line-height: 50px;
+}
+section.contactUsPage address ul li:nth-of-type(2) span:nth-of-type(2){
+    text-decoration: underline; cursor: pointer;
+}
+section.returnExchangesPage{
+    background-image: url("../images/footerPage/RETURNS&EXCHANGES.jpg");
+}
+section.returnExchangesPage ul li{
+    text-align: left;
+}
+section.returnExchangesPage ul li.active div{
+    display: block;
+}
+section.returnExchangesPage ul li.active span{
+    background-image: url('../icon/expand_less_FILL0_wght400_GRAD0_opsz48.svg');
+    background-color: #a9a9a9;   
+}
+section.returnExchangesPage ul li:hover span{
+    background-color: #a9a9a9; cursor: pointer;
+}
+
+section.shipping_InfomationPage{
+    background-image: url("../images/footerPage/SHIPPINGINFORMATION2.jpg");
+}
+section.shipping_InfomationPage > div div img{
+    margin-bottom: 15px;
+}
+section.shipping_InfomationPage > div div p{
+    color: white;
+}
+section.shipping_InfomationPage > div  ul li{
+    text-align: left;
+}section.shipping_InfomationPage > div ul li span{
+    cursor: pointer;
+}
+section.shipping_InfomationPage > div ul li:hover span{
+    background-color: #a9a9a9;
+}
+section.shipping_InfomationPage > div ul li.active span{
+    background-image: url('../icon/expand_less_FILL0_wght400_GRAD0_opsz48.svg');
+    background-color: #a9a9a9;
+}
+section.shipping_InfomationPage > div ul li.active div{
+    display: block;
+}
+section.warrantyInfomationPage{
+    background-image: url("../images/footerPage/WARRANTYINFORMATION.jpg");
+}
+section.warrantyInfomationPage > div p:not(:nth-of-type(3)){
+    margin-bottom: 15px;
+}
+section.warrantyInfomationPage address ul::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.warrantyInfomationPage address ul li{
+    float: left; font-style: normal;
+}
+section.warrantyInfomationPage address ul li:not(:last-of-type){
+    margin-bottom: 50px;
+}
+section.warrantyInfomationPage address ul li:nth-of-type(n+1):nth-of-type(-n+4){
+    width: 50%;
+}
+section.warrantyInfomationPage address ul li:not(:nth-of-type(n+1):nth-of-type(-n+4)){
+    width: 100%;
+}
+section.warrantyInfomationPage address ul li:not(:last-of-type) strong{
+    margin-bottom: 30px; display: block;
+}
+section.warrantyInfomationPage address ul li span{
+    margin-bottom: 15px;
+}
+section.warrantyInfomationPage address ul li:last-of-type a{
+    line-height: 50px;
+}
+section.warrantyInfomationPage address ul li:nth-of-type(2) span:nth-of-type(2){
+    text-decoration: underline; cursor: pointer;
+}
+
+section.sizeChartPage{
+    background-image: url("../images/footerPage/SizeCharts.jpg");
+}
+section.sizeChartPage ul::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.sizeChartPage ul li{
+    border: 1px solid #efefef; box-sizing: border-box;
+    height: 600px; padding: 2.63%; display: flex; align-content: center;
+    flex-flow: column wrap; justify-content: space-between;
+}
+section.sizeChartPage ul li h3{
+    font-size: 24px; color: white;
+}
+section.sizeChartPage ul li p{
+    color: #a9a9a9; margin-bottom: 15px;
+}
+section.sizeChartPage ul li table{
+    height: 100%; max-height: 350px; width: 100%; text-align: center;
+}
+section.sizeChartPage ul li table tbody tr td,
+section.sizeChartPage ul li table tbody tr th{
+    border: 1px solid #b1b1b1; box-sizing: border-box;
+    width: 33.33%; height: 14.285%; color: white; vertical-align: middle;
+}
+section.sizeChartPage ul li table tbody tr td:nth-of-type(1),
+section.sizeChartPage ul li table tbody tr th:nth-of-type(1){
+    background-color: rgba(255,255, 255, 0.2);
+}
+section.sizeChartPage ul li table tbody tr td:not(:nth-of-type(1)),
+section.sizeChartPage ul li table tbody tr th:not(:nth-of-type(1)){
+    background-color: rgba(255,255, 255, 0.4);
+}
+
+section.everlastFaqPage{
+    background-image: url("../images/footerPage/EVERLASTFAQ\'S.jpg");
+}
+section.everlastFaqPage ul li span{
+    font-weight: 500;
+}
+section.everlastFaqPage ul li{
+    cursor: pointer;
+}
+section.everlastFaqPage ul li{
+    text-align: left;
+}
+section.everlastFaqPage ul li.active span{
+    background-image: url('../icon/expand_less_FILL0_wght400_GRAD0_opsz48.svg');
+    background-color: #a9a9a9;
+}
+section.everlastFaqPage ul li.active div{
+    display: block;
+}
+section.everlastFaqPage ul li:hover span{
+    background-color: #a9a9a9;
+}
+section.wholesalePage{
+    background-image: url("../images/footerPage/Wholesale.jpg");
+}
+section.wholesalePage > div:nth-of-type(1) p:not(:nth-of-type(3)){
+    margin-bottom: 15px;
+}
+section.wholesalePage > div:nth-of-type(2) > div::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.wholesalePage > div:nth-of-type(2) > div div{
+    float: left; margin-bottom: 100px;
+}
+section.wholesalePage > div:nth-of-type(2) > div div ul li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+section.wholesalePage address ul::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.wholesalePage address ul li{
+    float: left; font-style: normal; text-align: center;
+}
+section.wholesalePage address ul li:nth-of-type(n+1):nth-of-type(-n+2){
+    width: 50%;
+}
+section.wholesalePage address ul li:not(:nth-of-type(n+1):nth-of-type(-n+2)){
+    width: 100%;
+}
+section.wholesalePage address ul li:not(:last-of-type) strong{
+    margin-bottom: 30px; display: block;
+}
+section.wholesalePage address ul li span{
+    margin-bottom: 15px;
+}
+section.wholesalePage address ul li:last-of-type a{
+    line-height: 50px;
+}
+section.GSAInformationPage{
+    background-image: url("../images/footerPage/GSAInformation.jpg");
+}
+section.GSAInformationPage > div:nth-of-type(2) div::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section.GSAInformationPage > div:nth-of-type(2) div div{
+    float: left; width: 49%;
+}
+section.GSAInformationPage > div:nth-of-type(2) div div:last-of-type{
+    margin-left: 2%;
+}
+section.GSAInformationPage > div:nth-of-type(2) > div div ul li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+
+section.affiliateProgramPage{
+    background-image: url("../images/footerPage/front-view-boxing-equipment-ring.jpg");
+}
+section.affiliateProgramPage > div:nth-of-type(1) p:nth-of-type(1){
+    margin-bottom: 30px;
+}
+section.affiliateProgramPage > div:nth-of-type(2){
+    text-align: center;
+}
+section.affiliateProgramPage > div:nth-of-type(2) a{
+    color: white; text-decoration: none;
+    border:1px solid #ff0000; cursor: pointer;
+}
+
+section.privacyPolicyPage{
+    background-image: url("../images/footerPage/PRIVACYPOLICY.jpg");
+}
+section.privacyPolicyPage > article{
+    padding: 400px 0 100px;
+}
+
+section.termsOfUsePage{
+    background-image: url("../images/footerPage/TermsOfUse.jpg");
+}
+section.termsOfUsePage > article{
+    padding: 300px 0 100px;
+}
+
+
+
+@media screen and (min-width:768px){
+    section.listPageContent aside{
+        float: left; width: 18%;
+    }
+    section.listPageContent aside ol > li:last-of-type{
+        padding-bottom: 12px;
+    }
+    section.listPageContent aside ol > li:nth-of-type(1){
+        width: 100%; 
+    }
+    section.listPageContent.active > ol{
+        width: 80%; padding-left: 20%;
+    }
+
+    section.productExplain::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.productExplain{
+        padding: 231.2px 0 100px 0;
+    }
+    section.productExplain > div{
+        float: left;
+    }
+    section.productExplain div:nth-of-type(1){
+        position: relative;
+    }
+
+    section.reviewRatingAndWrite > div::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.reviewRatingAndWrite > div > div{
+        float: left;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1){
+        width: 40%;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(2){
+        width: 50%; margin-left: 10%;
+    }
+    section.reviewBody ul li{
+        float: left;
+    }
+
+    section.contactUsPage address{
+        padding: 200px 0 100px;
+    }
+
+    section.returnExchangesPage ul{
+        padding: 300px 0 100px;
+    }
+
+    section.warrantyInfomationPage address{
+        padding: 430px 0 100px; text-align: center;
+    }
+
+    section.sizeChartPage ul{
+        padding: 200px 0 100px;
+    }
+    section.sizeChartPage ul li{
+        float: left;
+    }
+
+    section.everlastFaqPage ul{
+        padding: 200px 0 100px;
+    }
+
+    section.wholesalePage > div:nth-of-type(2){
+        padding: 300px 0 100px;
+    }
+    section.wholesalePage > div:nth-of-type(2) > div div{
+        width: 50%;
+    }
+    section.wholesalePage > div:nth-of-type(2) > div div h3{
+        font-size: 24px; color: #b1b1b1; margin-bottom: 25px;
+    }
+    section.wholesalePage > div:nth-of-type(2) > div div ul li{
+        font-size: 20px; color: #dfdfdf;
+    }
+
+    section.wholesalePage address ul li:not(:last-of-type){
+        margin-bottom: 50px;
+    }
+
+    section.GSAInformationPage > div:nth-of-type(2){
+        padding: 500px 0 100px;
+    }
+    section.GSAInformationPage > div:nth-of-type(2) > div div h3{
+        font-size: 24px; color: #b1b1b1; margin-bottom: 25px;
+    }
+    section.GSAInformationPage > div:nth-of-type(2) > div div ul li{
+        font-size: 20px; color: #dfdfdf;
+    }
+
+    section.affiliateProgramPage > div:nth-of-type(2){
+        padding: 600px 0 100px;
+    }
+    section.affiliateProgramPage > div:nth-of-type(2) a{
+        width: 21%; padding: 40px 2%; font-size: 24px;
+    }
+}
+
+ /* tablet + desctop fin */
+
+@media screen and (max-width:767px){
+
+    section.contactUsPage address > *,
+    section.returnExchangesPage > ul > *,
+    section.warrantyInfomationPage address > *,
+    section.everlastFaqPage ul > *,
+    section.wholesalePage > div:nth-of-type(2) > *,
+    section.GSAInformationPage > div:nth-of-type(2) > *,
+    section.privacyPolicyPage > article > *,
+    section.termsOfUsePage > article > *,
+    section.shipping_InfomationPage > div > *{
+        max-width: 600px; margin: 0 auto; padding: 0 2.5%;
+    }
+
+    .signUpContent{
+        padding-top: 140px;
+    }
+    .signUpContent div{
+        width: 60%; bottom: 30px;
+        padding: 40px 0 40px 9.5%;
+    }
+    .signUpContent div span{
+        font-size: 24px;
+    }
+    .signUpContent div span:nth-of-type(2){
+        margin:30px 0 20px 0;
+    }
+    .signUpContent div mark{
+        font-size: 100px; right: 41%;
+    }
+    .signUpContent div input{
+        width: 40%; height: 40px; font-size: 12px;
+    }
+
+    /* signUpContent fin */
+
+    .ProductContent{
+        padding: 40px 2.5%; height: 100%;
+    }
+    .ProductContent h2{
+        font-size: 30px;
+    }
+    .ProductContent ul{
+        height: 100%;
+    }
+    .ProductContent ul > li{
+        width: 100%; height: 500px; font-size: 40px;
+    }
+    .ProductContent ul > li:nth-of-type(2){
+        background-position-x: -200px;
+    }
+    .ProductContent ul > li:not(:nth-of-type(3)){
+        margin-bottom: 15px;
+    }
+    .ProductContent ul li:nth-of-type(1) ol li{
+        width: 100%; height: 33.33%; float: left;
+    }
+    .ProductContent ul li:not(:nth-of-type(1)) ol li{
+        width: 100%; height: 50%;
+    }
+    .ProductContent ul li ol li span{
+        font-size: 20px;
+    }
+    .ProductContent ul li ol li a{
+        font-size: 24px;
+    }
+
+    /* ProductContent fin */
+
+    .bestSellerContent{
+        padding: 40px 0 40px 2.5%;
+    }
+    .bestSellerContent h2{
+        font-size: 30px;
+    }
+    .bestSellerContent ul.slider li figure figcaption dl dt{
+        font-size: 20px;
+    }
+
+    /* bestSellerContent */
+
+    .proAndFinderContent ul > li{
+        width: 100%; height: 500px;
+    }
+    .proAndFinderContent ul > li:first-of-type{
+        background-position: -80px;
+    }
+    .proAndFinderContent ul > li:last-of-type{
+        background-position: -80px -200px;
+    } 
+    .proAndFinderContent ul > li h3{
+        font-size: 30px;
+    }
+    .proAndFinderContent ul li div span{
+        font-size: 24px;
+    }
+    .proAndFinderContent ul > li div a{
+        line-height: 50px; font-size: 12px;
+    }
+
+    /* proAndFinderContent fin */
+
+    .everlastSNSContent{
+        padding: 30px 2.5%;
+    }
+    .everlastSNSContent h2{
+        font-size: 24px;
+    }
+    .everlastSNSContent ul li:nth-of-type(1) ol li:nth-of-type(1){
+        margin-bottom: 2%;
+    }
+    .everlastSNSContent ul li:nth-of-type(3) ol li:nth-of-type(3){
+        margin-top: 2%;
+    }
+    
+    /* everlastSNSContent fin */
+
+    section.listPageContent h2{
+        font-size: 36px; padding-top: 140px;
+    }
+    section.listPageContent nav ul li{
+        line-height: 30px;
+    }
+    section.listPageContent nav ul li a{
+        font-size: 20px;
+    }
+
+    section.listPageContent > div input{
+        padding-left: 8%;
+    }
+    section.listPageContent aside ol::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.listPageContent aside ol > li{
+        float: left; 
+    }
+    section.listPageContent aside ol > li:not(:first-of-type){
+        margin-left: 3.33%;
+    }
+    section.listPageContent aside ol > li:not(:last-of-type){
+        width: 30%;
+    }
+    section.listPageContent aside ol > li:last-of-type{
+        width: 28%;
+    }
+    section.listPageContent aside ol > li:last-of-type > div{
+        font-size: 12px;
+    }
+    section.listPageContent aside ol li:nth-of-type(2) ul li input{
+        min-width: 15px; height: 15px; background-size: 15px;
+    }
+    section.listPageContent aside ol li:nth-of-type(2) ul li input:hover,
+    section.listPageContent aside ol li:nth-of-type(2) ul li input.active{
+        min-width: 20px; height: 20px;
+        background-size: 20px; 
+    }
+    section.listPageContent > ol li > input[value="wishheart"]{
+        right: 4%; bottom: 150px;
+    }
+    section.listPageContent > ol li div{
+        height: 100px;
+    }
+    section.listPageContent > ol li div ul li input{
+        min-width: 15px; height: 15px;
+        background-size: 15px;
+    }
+    section.listPageContent > ol li div ul li input:hover{
+        min-width: 20px; height: 20px;
+        background-size: 20px;
+    }
+    section.listPageContent.active > ol{
+        width: 100%;
+    }
+
+    /* listPageContent fin */
+
+    .Description{
+        top: 110px; left: 0; width: 93%; padding: 50px 3.5%;
+    }
+
+    section.productExplain{
+        padding: 150px 0 30px 0;
+    }
+    section.productExplain > div{
+        display: block;
+    }
+    section.productExplain > div:nth-of-type(1){
+        position: relative;
+    }
+    section.productExplain div:nth-of-type(2){
+        padding: 0 2.5%;
+    }
+    section.productExplain div:nth-of-type(2) h2{
+        font-size: 30px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1){
+        margin-bottom: 30px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) img{
+        max-width: 100px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) span{
+        font-size: 16px; line-height: 36px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) mark{
+        font-size: 30px;
+    }
+    section.productExplain div:nth-of-type(2) > div:not(:nth-of-type(1)){
+        width: 40.7%; vertical-align: top;
+    }
+    section.productExplain div:nth-of-type(2) > div label{
+        font-size: 20px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) span{
+        padding-left: 105px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3),
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4){
+        margin-bottom: 50px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul li input{
+        min-width: 20px; height: 20px; background-size: 20px; 
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul li input:hover{
+        min-width: 25px; height: 25px;
+        background-size: 25px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4){
+        width: 100%;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input{
+        width: 42.8%; height: 70px; font-size: 14px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input:last-of-type{
+        margin-left: 12.8%;
+    }
+
+    /* productExplain fin */
+
+    section.reviewRatingAndWrite h2{
+        font-size: 30px;
+    }
+    section.reviewRatingAndWrite h2 small{
+        font-size: 12px;
+    }
+    section.reviewRatingAndWrite > div > div{
+        display: block;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1){
+        margin-bottom: 30px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) > img{
+        min-width: 130px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li strong{
+        font-size: 24px; width: 300px;
+        background-size: 25px;
+        background-position: 1px 1px;
+        padding-left: 30px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li meter{
+        width: 56%; position: absolute; top: 14px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li > span{
+        font-size: 18px; top: 18px;
+    }
+
+    /* reviewRatingAndWrite fin */
+    
+    section.reviewBody h2{
+        font-size: 20px;
+    }
+    section.reviewBody ul li{
+        display: block;
+    }
+    section.reviewBody ul li:not(:nth-of-type(-n+1)){
+        border-top: 1px solid #dfdfdf; margin-top: 30px; padding-top: 30px;
+    }
+    section.reviewBody ul li:not(:nth-of-type(2n+1)){
+        margin-left: 2%;
+    }
+    section.reviewBody ul li h3{
+        font-size: 24px;
+    }
+    section.reviewBody ul li img{
+        max-width: 88px;
+    }
+    section.reviewBody ul li p{
+        -webkit-line-clamp: 3;
+    }
+
+    /* productReview fin */
+
+    section.proTeamContent{
+        overflow-y: hidden;
+    }
+    section.proTeamContent h2{
+        font-size: 24px; padding-top: 160px;
+    }
+    section.proTeamContent h2 p{
+        font-size: 12px; width: 90%;
+    }
+    section.proTeamContent ul li{
+        width: 100%; height: 300px;
+    }
+    section.proTeamContent ul li.left > div:nth-of-type(1){
+        padding: 20px 3.74% 20px 60%;
+    }
+    section.proTeamContent ul li.right > div:nth-of-type(1){
+        padding: 20px 60% 20px 3.74%;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) h3{
+        font-size: 16px; padding-bottom: 25px;
+        background-position: 0 68%;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) small{
+        margin: 0 0 15px; font-size: 10px;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) q{
+        font-size: 12px; display: none;
+    }
+    section.proTeamContent ul li:hover div:nth-of-type(2){
+        padding: 0 6%;
+    }
+    section.proTeamContent ul li:hover div:nth-of-type(2){
+        font-size: 12px;
+    }
+
+    /* proTeamContent fin */
+    section.gloveFinderContent{
+        padding-top: 110px;
+    }
+    section.gloveFinderContent > div > div input{
+        width: 31.5%; height: 80px; font-size: 20px;
+    }
+    section.gloveFinderContent ul li{
+        font-size: 12px;
+    }
+    section.gloveFinderContent ul li span{
+        font-size: 14px; text-align: center;
+    }
+    section.gloveFinderContent ul li ol li{
+        height: 450px;
+    }
+    .gloveFinderContent ul li ol li:hover mark{
+        width: 95%; height: 50px;
+    }
+
+    /* gloveFinder fin */
+    section.aboutEverlast{
+        padding-top: 110px;
+    }
+    section.aboutEverlast h2{
+        font-size: 24px;
+    }
+    section.aboutEverlast > div:nth-of-type(1){
+        height: 500px;
+        background-position-x: -450px;
+        margin-bottom: 80px;
+    }   
+    section.aboutEverlast div:nth-of-type(1) h3{
+        font-size: 30px; padding-top: 70px;
+    }
+    section.aboutEverlast div:nth-of-type(1) p{
+        font-size: 16px; width: 80%; line-height: 20px;
+    }
+    section.aboutEverlast div:nth-of-type(2) h3{
+        font-size: 24px;
+    }    
+    section.aboutEverlast div:nth-of-type(2) ol{
+        padding: 0 2.5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li img{
+        width: 37.5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li:nth-of-type(2n+1) p{
+        margin-left: 2.5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li p{
+        font-size: 12px; line-height: 16px; width: 60%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li:last-of-type p:first-of-type{
+        margin-bottom: 20px;
+    }
+
+    /* aboutEverlast fins */
+
+    section.contactUsPage address{
+        padding: 100px 0 100px;
+    }
+    section.contactUsPage address ul li:nth-of-type(n+1):nth-of-type(-n+4){
+        width: 48%;
+    }
+    section.contactUsPage address ul li:nth-of-type(2),
+    section.contactUsPage address ul li:nth-of-type(4){
+        margin-left: 2%;
+    }
+
+    /* contactUsPage fin */
+    
+
+    section.returnExchangesPage ul{
+        padding: 250px 0 100px;
+    }
+
+    /* returnExchangesPage fin */
+
+    section.shipping_InfomationPage > div{
+        padding: 100px 0 100px; background-color: rgba(0, 0, 0, 0.6);
+    }
+    section.shipping_InfomationPage > div > div{
+        margin-bottom: 40px; text-align: center;
+    }
+    section.shipping_InfomationPage > div div img{
+        width: 95%;
+    }
+    section.shipping_InfomationPage > div div p{
+        display: block; font-size: 20px;
+    }
+
+    /* shipping_InfomationPage fin */
+
+    section.warrantyInfomationPage address{
+        padding: 350px 0 50px; text-align: center;
+    }
+
+    /* warrantyInfomationPage fin */
+
+    section.sizeChartPage ul{
+        padding: 100px 0 100px;
+    }
+    section.sizeChartPage ul li{
+        display: block;
+    }
+
+    /* sizeChartPage fin */
+
+
+    section.everlastFaqPage ul{
+        padding: 100px 0 100px;
+    }
+
+    /* everlastFaqPage fin */
+
+    section.wholesalePage > div:nth-of-type(2){
+        padding: 250px 0 50px;
+    }
+    section.wholesalePage > div:nth-of-type(2) > div div{
+        width: 49%;
+    }
+    section.wholesalePage > div:nth-of-type(2) > div div:nth-of-type(2){
+        margin-left: 2%;
+    }
+    section.wholesalePage > div:nth-of-type(2) > div div h3{
+        font-size: 20px; color: #b1b1b1; margin-bottom: 25px;
+    }
+    section.wholesalePage > div:nth-of-type(2) > div div ul li{
+        font-size: 16px; color: #dfdfdf;
+    }
+    section.wholesalePage address ul li:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+
+    /* GSAInformationPage fin */
+
+
+    section.GSAInformationPage > div:nth-of-type(1) h2 img{
+        width: 30%;
+    }
+    section.GSAInformationPage > div:nth-of-type(2){
+        padding: 400px 0 100px;
+    }
+    section.GSAInformationPage > div:nth-of-type(2) > div div h3{
+        font-size: 20px; color: #b1b1b1; margin-bottom: 25px;
+    }
+    section.GSAInformationPage > div:nth-of-type(2) > div div ul li{
+        font-size: 16px; color: #dfdfdf;
+    }
+
+    /* GSAInformationPage fin */
+
+    section.affiliateProgramPage > div:nth-of-type(2){
+        padding: 450px 0 100px;
+    }
+    section.affiliateProgramPage > div:nth-of-type(2) a{
+        padding: 30px 3%; font-size: 16px;
+    }
+
+    /* affiliateProgramPage fins */
+
+    /* privacyPolicyPage fin */
+
+}
+
+
+@media screen and (max-width:280px){
+    .signUpContent div{
+        width: 80%; bottom: 10px;
+        padding: 20px 0 20px 9.5%;
+    }
+    .signUpContent div span{
+        font-size: 16px;
+    }
+    .signUpContent div span:nth-of-type(2){
+        margin:15px 0 15px 0;
+    }
+    .signUpContent div mark{
+        font-size: 60px; right: 43%; top: 15px;
+    }
+    .signUpContent div input{
+        width: 40%; height: 40px; font-size: 12px;
+    }
+}
+
+/* mobile fin */
+
+@media screen and (min-width:768px) and (max-width:1279px){
+
+    section.contactUsPage address > *,
+    section.returnExchangesPage > ul > *,
+    section.warrantyInfomationPage address > *,
+    section.everlastFaqPage ul > *,
+    section.wholesalePage > div:nth-of-type(2) > *,
+    section.GSAInformationPage > div:nth-of-type(2) > *,
+    section.privacyPolicyPage > article > *,
+    section.termsOfUsePage > article > *,
+    section.shipping_InfomationPage > div > *{
+        max-width: 800px; margin: 0 auto; padding: 0 2.5%;
+    }
+    .signUpContent div{
+        width: 65%; bottom: 40px;
+        padding: 70px 0 70px 9.5%;
+    }
+    .signUpContent div span{
+        font-size: 40px;
+    }
+    .signUpContent div span:nth-of-type(2){
+        margin:50px 0 20px 0;
+    }
+    .signUpContent div mark{
+        font-size: 200px; right: 40%;
+
+    }
+    .signUpContent div input{
+        width: 20.8%; height: 60px; font-size: 16px;
+    }
+
+    /* signUpContent fin */
+
+    .ProductContent{
+        padding: 80px 2.5%; height: 100%;
+    }
+    .ProductContent h2{
+        font-size: 30px;
+    }
+    .ProductContent ul > li{
+        width: 100%; color: white;
+        font-size: 60px;
+    }
+    .ProductContent ul > li:nth-of-type(1){ 
+        background-position-y: -200px;
+    }
+    .ProductContent ul > li{
+        height: 560px;
+    }
+    .ProductContent ul > li:not(:nth-of-type(3)){
+        margin-bottom: 15px;
+    }
+    .ProductContent ul li:nth-of-type(1) ol li{
+        width: 33.33%; height: 100%; float: left;
+    }
+    .ProductContent ul li:not(:nth-of-type(1)) ol li{
+        width: 50%; height: 100%;
+    }
+    .ProductContent ul li ol li span{
+        font-size: 20px;
+    }
+    .ProductContent ul li ol li a{
+        font-size: 24px;
+    }
+
+    /* ProductContent fin */
+
+    .bestSellerContent{
+        padding: 80px 0 80px 2.5%;
+    }
+    .bestSellerContent h2{
+        font-size: 36px;
+    }
+    .bestSellerContent ul.slider li figure figcaption dl dt{
+        font-size: 20px;
+    }
+
+    /* bestSellerContent */
+
+
+    .proAndFinderContent ul > li{
+        width: 100%; height: 600px;
+    }
+    .proAndFinderContent ul > li:last-of-type{
+        background-position: -80px -200px;
+    }
+    .proAndFinderContent ul > li h3{
+        font-size: 40px;
+    }
+    .proAndFinderContent ul li div span{
+        font-size: 30px;
+    }
+    .proAndFinderContent ul > li div a{
+        font-size: 16px; line-height: 60px;
+    }
+
+    /* proAndFinderContent fin */
+
+    .everlastSNSContent{
+        padding: 65px 2.5%;
+    }
+    .everlastSNSContent h2{
+        font-size: 36px;
+    }
+    .everlastSNSContent ul li:nth-of-type(1) ol li:nth-of-type(1){
+        margin-bottom: 2%;
+    }
+    .everlastSNSContent ul li:nth-of-type(3) ol li:nth-of-type(3){
+        margin-top: 2%;
+    }
+    
+    /* everlastSNSContent fin */
+
+    section.listPageContent h2{
+        font-size: 36px;
+    }
+    section.listPageContent nav ul li{
+        line-height: 30px;
+    }
+    section.listPageContent nav ul li a{
+        font-size: 20px;
+    }
+    section.listPageContent > div input{
+        padding-left: 3.5%;
+    }
+    section.listPageContent aside ol > li:last-of-type{
+        width: 85%;
+    }
+    section.listPageContent aside ol > li:last-of-type > div{
+        font-size: 12px;
+    }
+    section.listPageContent aside ol li:nth-of-type(2) ul li input{
+        min-width: 15px; height: 15px; background-size: 15px;
+    }
+    section.listPageContent aside ol li:nth-of-type(2) ul li input:hover,
+    section.listPageContent aside ol li:nth-of-type(2) ul li input.active{
+        min-width: 20px; height: 20px;
+        background-size: 20px;
+    }
+    section.listPageContent > ol > li:not(:nth-of-type(2n+1)){
+        margin-left: 2%;
+    }
+    section.listPageContent > ol > li{
+        width: 49%;
+    }
+    section.listPageContent > ol li > input[value="wishheart"]{
+        right: 4%; bottom: 150px;
+    }
+    section.listPageContent > ol li div{
+        height: 80px;
+    }
+    section.listPageContent > ol li div ul li input{
+        min-width: 15px; height: 15px;
+        background-size: 15px;
+    }
+    section.listPageContent > ol li div ul li input:hover{
+        min-width: 20px; height: 20px;
+        background-size: 20px;
+    }
+
+    /* listPageContent fin */
+
+    .Description{
+        top: 140px; left: 0; width: 93%; padding: 50px 3.5%;
+    }
+
+    section.productExplain{
+        padding: 180px 0 100px 0;
+    }
+    section.productExplain div:nth-of-type(1){
+        width: 45.6%;
+    }
+    section.productExplain > div:nth-of-type(2){
+        width: 45.6%; margin-left: 2.8%;
+    }
+    section.productExplain div:nth-of-type(2) h2{
+        font-size: 30px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1){
+        margin-bottom: 30px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) img{
+        width: 30%; max-width: 100px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) span{
+        font-size: 16px; line-height: 35px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) mark{
+        font-size: 30px;
+    }
+    section.productExplain div:nth-of-type(2) > div:not(:nth-of-type(1)){
+        vertical-align: top; width: 43.5%;
+    }
+    section.productExplain div:nth-of-type(2) > div label{
+        font-size: 20px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) span{
+        padding-left: 105px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3),
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4){
+        margin-bottom: 50px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul li input{
+        min-width: 20px; height: 20px; background-size: 20px; 
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4){
+        width: 100%;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul li input:hover{
+        min-width: 25px; height: 25px;
+        background-size: 25px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input{
+        width: 43%; height: 70px; font-size: 16px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input:last-of-type{
+        margin-left: 12.8%;
+    }
+
+    /* productExplain fin */
+
+    section.reviewRatingAndWrite h2{
+        font-size: 60px;
+    }
+    section.reviewRatingAndWrite h2 small{
+        font-size: 16px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) > img{
+        min-width: 130px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) > span{
+        font-size: 50px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li strong{
+        font-size: 24px; width: 300px;
+        background-size: 25px;
+        background-position: 1px 1px;
+        padding-left: 30px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li meter{
+        width: 60%; position: absolute; top: 14px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li > span{
+        font-size: 18px; top: 20px;
+    }
+
+    /* reviewRatingAndWrite fin */
+    
+    section.reviewBody h2{
+        font-size: 24px;
+    }
+    section.reviewBody ul li{
+        width: 49%;
+    }
+    section.reviewBody ul li:not(:nth-of-type(-n+2)){
+        border-top: 1px solid #dfdfdf; margin-top: 30px; padding-top: 30px;
+    }
+    section.reviewBody ul li:not(:nth-of-type(2n+1)){
+        margin-left: 2%;
+    }
+    section.reviewBody ul li h3{
+        font-size: 24px; 
+    }
+    section.reviewBody ul li p{
+        -webkit-line-clamp: 3;
+    }
+
+    /* productReview fin */
+
+    section.proTeamContent h2{
+        padding-top: 160px; font-size: 36px;
+    }
+    section.proTeamContent h2 p{
+        font-size: 16px; width: 45%;
+    }
+    section.proTeamContent ul li{
+        width: 90%; height: 380px;
+    }
+    section.proTeamContent ul li.left > div:nth-of-type(1){
+        padding: 40px 3.74% 40px 60%;
+    }
+    section.proTeamContent ul li.right > div:nth-of-type(1){
+        padding: 40px 60% 40px 3.74%;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) h3{
+        font-size: 24px; padding-bottom: 60px;
+        background-position: 0 68%;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) small{
+        margin: 0 0 70px; font-size: 12px;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) q{
+        font-size: 16px;
+    }
+    section.proTeamContent ul li:hover div:nth-of-type(2){
+        padding: 0 8%;
+    }
+    section.proTeamContent ul li:hover div:nth-of-type(2){
+        font-size: 16px;
+    }
+
+    /* proTeamContent fin */
+
+
+    section.gloveFinderContent > div > div input{
+        width: 31.5%; height: 150px; font-size: 50px;
+    }
+    section.gloveFinderContent ul li{
+        font-size: 24px;
+    }
+    section.gloveFinderContent ul li ol li{
+        height: 600px;
+    }
+    .gloveFinderContent ul li ol li:hover mark{
+        width: 80%; height: 60px;
+    }
+
+    /* gloveFinder fin */
+
+    section.aboutEverlast h2{
+        font-size: 30px;
+    }
+    section.aboutEverlast > div:nth-of-type(1){
+        height: 500px; margin-bottom: 80px;
+    }   
+    section.aboutEverlast div:nth-of-type(1) h3{
+        font-size: 40px; padding-top: 100px;
+    }
+    section.aboutEverlast div:nth-of-type(1) p{
+        font-size: 20px; width: 70%;
+    }
+    section.aboutEverlast div:nth-of-type(2) h3{
+        font-size: 30px;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol{
+        padding: 0 5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li img{
+        width: 37.5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li:nth-of-type(2n+1) p{
+        margin-left: 2.5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li p{
+        font-size: 16px; line-height: 24px; width: 60%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li:last-of-type p:first-of-type{
+        margin-bottom: 35px;
+    }
+
+    /* aboutEverlast fins */
+
+    section.contactUsPage address ul li:nth-of-type(n+1):nth-of-type(-n+4){
+        width: 48%;
+    }
+    section.contactUsPage address ul li:nth-of-type(2),
+    section.contactUsPage address ul li:nth-of-type(4){
+        margin-left: 2%;
+    }
+
+
+    /* contactUsPage fin */
+    
+
+    /* returnExchangesPage fin */
+
+    section.shipping_InfomationPage > div{
+        padding: 200px 0 100px; background-color: rgba(0, 0, 0, 0.6);
+    }
+    section.shipping_InfomationPage > div > div{
+        margin-bottom: 40px; text-align: center;
+    }
+    section.shipping_InfomationPage > div div p{
+        padding: 0 10%; display: block; font-size: 20px;
+    }
+
+    /* shipping_InfomationPage fin */
+
+
+    /* warrantyInfomationPage fin */
+
+    section.sizeChartPage ul li{
+        width: 50%;
+    }
+
+    /* sizeChartPage fin */
+
+    /* everlastFaqPage fin */
+
+    /* GSAInformationPage fin */
+
+    /* affiliateProgramPage fins */
+
+    /* privacyPolicyPage fin */
+
+}
+
+/* tablet fin */
+
+@media screen and (min-width:1280px){
+    section.contactUsPage address > *,
+    section.returnExchangesPage > ul > *,
+    section.warrantyInfomationPage address > *,
+    section.everlastFaqPage ul > *,
+    section.wholesalePage > div:nth-of-type(2) > *,
+    section.GSAInformationPage > div:nth-of-type(2) > *,
+    section.privacyPolicyPage > article > *,
+    section.termsOfUsePage > article > *{
+        max-width: 1000px; margin: 0 auto;
+    }
+    .signUpContent div{
+        width: 65%; bottom: 65px;
+        padding: 100px 0 150px 9.5%;
+    }
+    .signUpContent div span{
+        font-size: 70px;
+    }
+    .signUpContent div span:nth-of-type(2){
+        margin:95px 0 40px 0;
+    }
+    .signUpContent div mark{
+        font-size: 400px; right: 37%;
+    }
+    .signUpContent div input{
+        width: 20.8%; height: 90px; font-size: 24px;
+    }
+
+    /* signUpContent fin */
+
+    .ProductContent{
+        padding: 80px 0; height: 100%;
+    }
+    .ProductContent h2{
+        font-size: 36px;
+    }
+    .ProductContent ul::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .ProductContent ul{
+        height: 100%;
+    }
+    .ProductContent ul > li{
+        float: left; width: 49.25%; height: 100%;
+        font-size: 100px;
+    }
+    .ProductContent ul > li:nth-of-type(1){
+        height: 1150px; margin-right: 1.5%; 
+    }
+    .ProductContent ul > li:not(:nth-of-type(1)){
+        height: 560px;
+    }
+    .ProductContent ul > li:nth-of-type(2){
+        margin-bottom: 30px;
+    }
+    .ProductContent ul li:nth-of-type(1) ol li{
+        width: 100%; height: 33.33%;
+    }
+    .ProductContent ul li:not(:nth-of-type(1)) ol li{
+        width: 50%; height: 100%;
+    }
+    .ProductContent ul li ol li span{
+        font-size: 36px;
+    }
+    .ProductContent ul li ol li a{
+        font-size: 36px;
+    }
+
+    /* ProductContent fin */
+
+    .bestSellerContent{
+        padding: 80px 0;
+    }
+    .bestSellerContent h2{
+        font-size: 36px;
+    }
+    .bestSellerContent ul.slider li figure figcaption dl dt{
+        font-size: 20px;
+    }
+
+    /* bestSellerContent */
+
+    .proAndFinderContent ul::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .proAndFinderContent ul > li{
+        float: left; width: 50%; height: 800px;
+
+    }
+    .proAndFinderContent ul > li:first-of-type{
+        background-position: -80px;
+    }
+    .proAndFinderContent ul > li:last-of-type{
+        background-position: -80px -120px;
+    } 
+    .proAndFinderContent ul > li h3{
+        font-size: 50px;
+    }
+    .proAndFinderContent ul li div span{
+        font-size: 30px;
+    }
+    .proAndFinderContent ul > li div a{
+        line-height: 60px; font-size: 16px;
+    }
+
+    /* proAndFinderContent fin */
+
+    .everlastSNSContent{
+        padding: 65px 0;
+    }
+    .everlastSNSContent h2{
+        font-size: 36px;
+    }
+    .everlastSNSContent ul li:nth-of-type(1) ol li:nth-of-type(1){
+        margin-bottom: 8px;
+    }
+    .everlastSNSContent ul li:nth-of-type(3) ol li:nth-of-type(3){
+        margin-top: 1.5%;
+    }
+    .everlastSNSContent ul li ol li:hover div{
+        display: block; cursor: pointer;
+        display: flex; justify-content: center; align-items: center;
+    }
+    .everlastSNSContent ul li ol li div{
+        height: 100%; width: 100%; position: absolute; top: 0; left: 0;
+        background-color: rgba(0, 0, 0, 0.4); 
+    }
+    .everlastSNSContent ul li ol li div img{
+        min-width: 30px; height: 30px;
+    }
+    
+    /* everlastSNSContent fin */
+
+    section.listPageContent h2{
+        font-size: 36px;
+    }
+    section.listPageContent nav ul li a{
+        font-size: 20px;
+    }
+    section.listPageContent > div input{
+        padding-left: 2%;
+    }
+    section.listPageContent aside ol > li:last-of-type{
+        width: 90%;
+    }
+    section.listPageContent aside ol li:nth-of-type(2) ul li input{
+        min-width: 20px; height: 20px; background-size: 20px;
+    }
+    section.listPageContent aside ol li:nth-of-type(2) ul li input:hover,
+    section.listPageContent aside ol li:nth-of-type(2) ul li input.active{
+        min-width: 25px; height: 25px;
+        background-size: 25px; 
+    }
+    section.listPageContent > ol > li{
+        width: 32%;
+    }
+    section.listPageContent > ol > li:not(:nth-of-type(3n+1)){
+        margin-left: 2%;
+    }
+    section.listPageContent > ol li > input[value="wishheart"]{
+        right: 3%; bottom: 140px;
+    }
+    section.listPageContent > ol li div{
+        height: 85px;
+    }
+    section.listPageContent > ol li div ul li{
+        list-style: none; display: inline-block; line-height: 20px;
+    }
+    section.listPageContent > ol li div ul li input{
+        border-style: none; background-color: rgba(0, 0, 0, 0);
+        min-width: 20px; height: 20px; text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+    }
+    section.listPageContent > ol li div ul li:not(:nth-of-type(1)){
+        margin-left: 14.72;
+    }
+    section.listPageContent > ol li div ul li input:hover{
+        min-width: 25px; height: 25px;
+        background-size: 25px;
+    }
+    section.listPageContent.active aside{
+        display: block;
+    }
+    section.listPageContent.active > ol{
+        width: 80%; padding-left: 20%;
+    }
+    section.listPageContent.active > div input{
+        background-image: url('../icon/close_FILL0_wght400_GRAD0_opsz48.svg');
+    }
+
+    /* listPageContent fin */
+
+    .Description{
+        top: 181.2px; left: 21.63%; width: 50%; padding: 3.37%;
+    }
+
+    /* Description fin */
+
+    section.productExplain{
+        padding: 231.2px 0 100px 0;
+    }
+    section.productExplain div:nth-of-type(1){
+        width: 46.6%;
+    }
+    section.productExplain > div:nth-of-type(2){
+        width: 46.6%; margin-left: 6.8%;
+    }
+    section.productExplain div:nth-of-type(2) h2{
+        font-size: 36px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1){
+        margin-bottom: 50px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) img{
+        width: 110px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) span{
+        font-size: 20px; line-height: 36px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) mark{
+        font-size: 40px;
+    }
+    section.productExplain div:nth-of-type(2) > div:not(:nth-of-type(1)){
+        display: inline-block; width: 43.5%;
+    }
+    section.productExplain div:nth-of-type(2) > div label{
+        font-size: 24px;
+    }
+    section.productExplain div:nth-of-type(2) div:nth-of-type(1) span{
+        padding-left: 115px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3),
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4){
+        margin-bottom: 100px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul li input{
+        min-width: 25px; height: 25px; background-size: 25px; 
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(3) ul li input:hover{
+        min-width: 30px; height: 30px;
+        background-size: 30px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4){
+        width: 100%;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input{
+        width: 42%; height: 90px; font-size: 20px;
+    }
+    section.productExplain div:nth-of-type(2) > div:nth-of-type(4) input:last-of-type{
+        margin-left: 13.4%;
+    }
+
+    /* productExplain fin */
+
+    section.reviewRatingAndWrite h2{
+        font-size: 60px;
+    }
+    section.reviewRatingAndWrite h2 small{
+        font-size: 16px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) > img{
+        width: 30%;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) > span{
+        font-size: 50px;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li strong{
+        font-size: 30px; width: 300px;
+        background-size: 25px;
+        background-position: 1px;
+        padding-left: 5.77%;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li meter{
+        width: 70%;
+    }
+    section.reviewRatingAndWrite > div > div:nth-of-type(1) ul li > span{
+        font-size: 24px; top: 18px;
+    }
+
+    /* reviewRatingAndWrite fin */
+    
+    section.reviewBody h2{
+        font-size: 24px;
+    }
+    section.reviewBody ul li{
+        width: 32.433%;
+    }
+    section.reviewBody ul li:not(:nth-of-type(-n+3)){
+        border-top: 1px solid #dfdfdf; margin-top: 30px; padding-top: 30px;
+    }
+    section.reviewBody ul li:not(:nth-of-type(3n+1)){
+        margin-left: 1.35%;
+    }
+    section.reviewBody ul li h3{
+        font-size: 24px; 
+    }
+    section.reviewBody ul li p{
+        -webkit-line-clamp: 4;
+    }
+
+    /* productReview fin */
+
+    section.proTeamContent{
+        padding-top: 201.2px;
+    }
+    section.proTeamContent h2{
+        font-size: 36px;
+    }
+    section.proTeamContent h2 p{
+        font-size: 16px; width: 45%;
+    }
+    section.proTeamContent ul li{
+        width: 84.21%; height: 520px;
+    }
+    section.proTeamContent ul li.left > div:nth-of-type(1){
+        padding: 60px 3.74% 60px 60%;
+    }
+    section.proTeamContent ul li.right > div:nth-of-type(1){
+        padding: 60px 60% 60px 3.74%;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) h3{
+        font-size: 40px; padding-bottom: 25px;
+        background-position: 0 64px;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) small{
+        margin: 25px 0 100px;
+    }
+    section.proTeamContent ul li > div:nth-of-type(1) q{
+        font-size: 20px;
+    }
+    section.proTeamContent ul li:hover div:nth-of-type(2){
+        padding: 0 8%;
+    }
+    section.proTeamContent ul li:hover div:nth-of-type(2){
+        font-size: 24px;
+    }
+
+    /* proTeamContent fin */
+
+    section.gloveFinderContent > div > div input{
+        width: 31.5%; height: 200px; font-size: 60px;
+    }
+    section.gloveFinderContent ul li{
+        font-size: 30px;
+    }
+    section.gloveFinderContent ul li ol li{
+        height: 870px;
+    }
+    .gloveFinderContent ul li ol li:hover mark{
+        width: 50%; height: 70px;
+    }
+
+    /* gloveFinder fin */
+ 
+    section.aboutEverlast h2{
+        font-size: 36px;
+    }
+    section.aboutEverlast > div:nth-of-type(1){
+        height: 500px; margin-bottom: 100px;
+    }   
+    section.aboutEverlast div:nth-of-type(1) h3{
+        font-size: 50px; padding-top: 100px;
+    }
+    section.aboutEverlast div:nth-of-type(1) p{
+        font-size: 24px; width: 70%;
+    }
+    section.aboutEverlast div:nth-of-type(2) h3{
+        font-size: 36px;
+    } 
+    section.aboutEverlast div:nth-of-type(2) ol{
+        padding: 0 5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li img{
+        width: 37.5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li:nth-of-type(2n+1) p{
+        margin-left: 4.5%;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li p{
+        font-size: 24px; line-height: 40px; width: 58%;
+        padding-top: 15px;
+    }
+    section.aboutEverlast div:nth-of-type(2) ol li:last-of-type p:first-of-type{
+        margin-bottom: 65px;
+    }
+
+    /* aboutEverlast fins */
+
+    section.contactUsPage address ul li:nth-of-type(n+1):nth-of-type(-n+4){
+        width: 50%;
+    }
+
+    /* contactUsPage fin */
+    
+    /* returnExchangesPage fin */
+
+    section.shipping_InfomationPage > div{
+        padding: 200px 0 100px; background-color: rgba(0, 0, 0, 0.6);
+    }
+    section.shipping_InfomationPage > div::after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.shipping_InfomationPage > div > *{
+        float: left;
+    }
+    section.shipping_InfomationPage > div > div{
+        width: 40%; padding-left: 2.5%;
+    }
+    section.shipping_InfomationPage > div > ul{
+        width: 50%; margin-left: 5%; padding-right: 2.5%;
+    }
+    section.shipping_InfomationPage > div div p{
+        max-width: 546px; font-size: 20px;
+    }
+
+    /* shipping_InfomationPage fin */
+
+
+    /* warrantyInfomationPage fin */
+
+    section.sizeChartPage ul li{
+        width: 33.33%;
+    }
+
+    /* sizeChartPage fin */
+
+
+    /* everlastFaqPage fin */
+
+
+    /* GSAInformationPage fin */
+
+    /* affiliateProgramPage fins */
+
+    section.privacyPolicyPage{
+        background-image: url("../images/footerPage/PRIVACYPOLICY.jpg");
+    }
+    section.privacyPolicyPage > article{
+        padding: 400px 0 100px;
+    }
+
+    /* privacyPolicyPage fin */
+
+    section.termsOfUsePage{
+        background-image: url("../images/footerPage/TermsOfUse.jpg");
+    }
+    section.termsOfUsePage > article{
+        padding: 300px 0 100px;
+    }
+
+}
+
+/* desctop din */

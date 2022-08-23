@@ -1,0 +1,147 @@
+input[value$="r"]{
+    background-image: url('../images/color/red.jpg');
+}
+input[value$="w"]{
+    background-image: url('../images/color/white.jpg');
+}
+input[value$="b"]{
+    background-image: url('../images/color/black.jpg');
+}
+input[value$="y"]{
+    background-image: url('../images/color/yellow.jpg');
+}
+input[value$="grey"]{
+    background-image: url('../images/color/grey.jpg');
+}
+input[value$="blue"]{
+    background-image: url('../images/color/blue.jpg');
+}
+input[value$="pk"]{
+    background-image: url('../images/color/pink.jpg');
+}
+input[value$="w"]{
+    background-image: url('../images/color/white.jpg');
+}
+input[value$="green"]{
+    background-image: url('../images/color/green.jpg');
+}
+input[value$="gold"]{
+    background-image: url('../images/color/gold.jpg');
+}
+input[value$="brown"]{
+    background-image: url('../images/color/brown.jpg');
+}
+input[value$="mint"]{
+    background-image: url('../images/color/mint.jpg');
+}
+input[value$="purple"]{
+    background-image: url('../images/color/purple.jpg');
+}
+input[value$="o"]{
+    background-image: url('../images/color/orange.jpg');
+}
+input[value$="navy"]{
+    background-image: url('../images/color/navy.jpg');
+}
+input[value$="s"]{
+    background-image: url('../images/color/silver.jpg');
+}
+input[value$="wgold"]{
+    background-image: url('../images/color/whiteGold.jpg');
+}
+input[value$="bluered"]{
+    background-image: url('../images/color/blueRed.jpg');
+}
+input[value$="bgreen"]{
+    background-image: url('../images/color/blackGreen.jpg');
+}
+input[value$="greywhite"]{
+    background-image: url('../images/color/greySilver.jpg');
+}
+input[value$="greyGold"]{
+    background-image: url('../images/color/greyGold.jpg');
+}
+input[value$="blueGreen"]{
+    background-image: url('../images/color/blueGreen.jpg');
+}
+input[value$="byellow"]{
+    background-image: url('../images/color/blackYellow.jpg');
+}
+input[value$="yellowGreen"]{
+    background-image: url('../images/color/yellowGreen.jpg');
+}
+input[value$="ryellow"]{
+    background-image: url('../images/color/redYellow.jpg');
+}
+input[value$="blueyellow"]{
+    background-image: url('../images/color/blueYellow.jpg');
+}
+input[value$="blackBlue"]{
+    background-image: url('../images/color/blackBlue.jpg');
+}
+input[value$="blackPurple"]{
+    background-image: url('../images/color/blackPurplle.jpg');
+}
+input[value$="bpink"]{
+    background-image: url('../images/color/blackPink.jpg');
+}
+input[value$="bgold"]{
+    background-image: url('../images/color/blackGold.jpg');
+}
+input[value$="borange"]{
+    background-image: url('../images/color/borange.jpg');
+}
+input[value$="blackRed"]{
+    background-image: url('../images/color/blackRed.jpg');
+}
+input[value$="bsilver"]{
+    background-image: url('../images/color/blackSilver.jpg');
+}
+input[value$="bgrey"]{
+    background-image: url('../images/color/blackGrey.jpg');
+}
+input[value$="bred"]{
+    background-image: url('../images/color/blackRed.jpg');
+}
+input[value$="bwhite"]{
+    background-image: url('../images/color/blackWhite.jpg');
+}
+input[value$="greyRed"]{
+    background-image: url('../images/color/greyRed.jpg');
+}
+input[value$="navyPink"]{
+    background-image: url('../images/color/navyPink.jpg');
+}
+input[value$="navyRed"]{
+    background-image: url('../images/color/navyRed.jpg');
+}
+input[value$="navyGreen"]{
+    background-image: url('../images/color/navyGreen.jpg');
+}
+input[value$="redBlack"]{
+    background-image: url('../images/color/redBlack.jpg');
+}
+input[value$="rblue"]{
+    background-image: url('../images/color/redBlue.jpg');
+}
+input[value$="rgrey"]{
+    background-image: url('../images/color/redGrey.jpg');
+}
+input[value$="redWhite"]{
+    background-image: url('../images/color/redWhite.jpg');
+}
+input[value$="blueBlack"]{
+    background-image: url('../images/color/blueBlack.jpg');
+}
+input[value$="greenGrey"]{
+    background-image: url('../images/color/greenGrey.jpg');
+}
+input[value$="blueBlack"]{
+    background-image: url('../images/color/blueBlack.jpg');
+}
+input[value$="yellowBlack"]{
+    background-image: url('../images/color/yellowBlack.jpg');
+}
+input[value$="whiteBlack"]{
+    background-image: url('../images/color/whiteBlack.jpg');
+}

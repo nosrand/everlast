@@ -1,0 +1,444 @@
+
+footer .footerTop,
+.footerBottom > *,
+.headerTop > *,
+.headerBottom > *,
+.signUpContent > div,
+.ProductContent,
+.bestSellerContent > *,
+.everlastSNSContent > *,
+section.listPageContent,
+section.proTeamContent h2,
+section.gloveFinderContent ul li,
+section.aboutEverlast div:nth-of-type(2),
+section.aboutEverlast h2,
+section.shipping_InfomationPage > div > *{
+    max-width: 1780px; margin: 0 auto;
+}
+
+section.productExplain,
+section.reviewRatingAndWrite,
+section.reviewBody{
+    max-width: 1480px; margin: 0 auto;
+}
+
+input[value="wishheart"]{
+    cursor: pointer;
+}
+
+
+div[class*='Popup'],
+.ShoppingCart,
+.popupDialog,
+.careerPopup > form fieldset ul li:nth-of-type(n+6) div,
+.signUpContent h2,
+.ProductContent ul li ol li:hover span,
+.proAndFinderContent h2,
+.everlastSNSContent ul li ol li div,
+section.listPageContent aside,
+.Description,
+section.proTeamContent ul li > div:nth-of-type(2),
+section.proTeamContent ul li:hover div:nth-of-type(1),
+section.gloveFinderContent h2,
+section.returnExchangesPage ul li div,
+section.shipping_InfomationPage > div ul li div,
+section.sizeChartPage ul li table caption,
+section.everlastFaqPage ul li div{
+    display: none;
+}
+
+.signUpContent,
+.signUpContent div input,
+.proAndFinderContent ul > li h3,
+.proAndFinderContent ul li div,
+.proAndFinderContent ul li div input,
+section.productExplain div:nth-of-type(2) div:nth-of-type(1) mark,
+section.affiliateProgramPage > div:nth-of-type(2) a{
+    font-family: 'Michroma', sans-serif;
+}
+
+header,
+footer,
+.ShoppingCart,
+div[class*='Popup'],
+.ProductContent,
+.bestSellerContent,
+.everlastSNSContent,
+section.listPageContent,
+section.productExplain,
+section.reviewRatingAndWrite,
+section.reviewBody,
+section.proTeamContent,
+section.aboutEverlast,
+section[class*='Page']{
+    font-family: 'Roboto', sans-serif; 
+}
+
+section.proTeamContent ul li > div:nth-of-type(1) h3,
+section.proTeamContent ul li > div:nth-of-type(1) small{
+    font-family: 'Cinzel', serif;
+}
+
+ul li,
+ol li{
+    list-style: none;
+}
+
+div[class*='Popup'] .btn_close{
+    background-image: url('../icon/close_FILL0_wght400_GRAD0_opsz48.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: none;
+    text-indent: -9999px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute; right: 1%; top: 2px;
+    width: 30px; height: 30px; cursor: pointer;
+}
+
+.accountPopup form fieldset ul li small,
+.ForgetPopup form fieldset small,
+.careerPopup form fieldset ul li:not(:nth-of-type(5)) small{
+    font-size: 14px; color: #a90000; display: none;
+    position: absolute; right: 0;
+}
+
+.accountPopup form fieldset#login ul li small.active,
+.ForgetPopup form fieldset small.active,
+.careerPopup form fieldset ul li small.active,
+.careerPopup > form fieldset ul li.active:nth-of-type(n+6) div{
+    display: block;
+}
+
+.accountPopup form fieldset#login ul li:not(:nth-of-type(3)) input,
+.accountPopup form fieldset#signup ul li:nth-of-type(n+1):nth-of-type(-n+5) input,
+.ForgetPopup form fieldset input,
+.careerPopup form fieldset ul li:not(:nth-of-type(5)) input,
+.careerPopup form fieldset ul li span.componentSelect select{
+    width: 100%; line-height: 55px; padding-left: 3.526%; margin-bottom: 5px; 
+    box-sizing: border-box;
+}
+
+.careerPopup > form fieldset ul li:nth-of-type(6) input,    
+.accountPopup form fieldset ul li:last-of-type,
+.ForgetPopup a{
+    border-style: none; font-size: 20px; color: white; font-weight: 700;
+    background-color: #cf0000; line-height: 50px; text-align: center;
+    cursor: pointer;
+}
+
+
+section[class$='Page']{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%; position: relative;
+}
+
+section[class$='Page'] > ul li span,
+section.shipping_InfomationPage > div ul li span,
+.careerPopup > form fieldset ul li:nth-of-type(n+6) span{
+    display: block; padding: 20px 0 20px 2.821%;  background-color: #dfdfdf;
+    color: black; font-size: 20px; font-weight: 700;
+    background-image: url('../icon/expand_more_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-position: 98%;
+    background-size: 40px;
+}
+
+section[class$='Page'] address{
+    text-align: center;
+}
+
+section.aboutEverlast div:nth-of-type(1) > div,
+section.wholesalePage > div:nth-of-type(2),
+section.GSAInformationPage > div:nth-of-type(2),
+section.affiliateProgramPage > div:nth-of-type(2),
+section[class$='Page'] > address,
+section[class$='Page'] > ul,
+section[class$='Page']> article{
+    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);
+}
+
+section[class$='Page'] ul > li > div,
+.careerPopup > form fieldset ul li:nth-of-type(n+6) div{
+    padding: 20px 2.821%; background-color: white; font-size: 12px;
+}
+section[class$='Page'] ul > li div span,
+.careerPopup > form fieldset ul li:nth-of-type(n+6) div span {
+    margin-bottom: 20px; color: #b1b1b1;
+}
+section[class$='Page'] ul > li div strong,
+.careerPopup > form fieldset ul li:nth-of-type(n+6) div strong{
+    display: block; font-size: 20px; margin-bottom: 20px;
+}
+section[class$='Page'] ul li div ol li,
+.careerPopup > form fieldset ul li:nth-of-type(n+6) div ol li,
+.careerPopup > form fieldset ul li:nth-of-type(n+6) div p{
+    margin-bottom: 20px; color: #b1b1b1; font-size: 16px;
+}
+output {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    position: absolute; top: 25px;
+  }
+  
+  /* input[type="number"] {
+    width: 40px;
+    padding: 4px 5px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+  } */
+  
+  /* input[type="range"]:focus,
+  input[type="number"]:focus {
+    box-shadow: 0 0 3px 1px #4b81dd;
+    outline: none;
+  } */
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 95%;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-image: linear-gradient(#ff4500, #ff4500);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  /* Input Thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff4500;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff4500;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff4500;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #ff0200;
+  }
+  
+  input[type="range"]::-moz-range-thumb:hover {
+    background: #ff0200;
+  }
+  
+  input[type="range"]::-ms-thumb:hover {
+    background: #ff0200;
+  }
+  
+  /* Input Track */
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+@media screen and (max-width:767px){
+
+    output {
+        left: 82%;
+      }
+
+    .signUpContent,
+    section.listPageContent h2,
+    section[class$='Page'],
+    section.gloveFinderContent,
+    section.aboutEverlast{
+        position: relative; padding-top: 110px;
+    }
+    
+    section[class$='Page'] > div:nth-of-type(1):not(.shippingInfomationBox),
+    section.shipping_InfomationPage h2,
+    section.contactUsPage h2,
+    section.sizeChartPage h2,
+    section.everlastFaqPage h2{
+        font-size: 24px; color: white; width: 100%;
+        position: absolute; padding-top: 50px; text-align: center;
+    }
+    
+    section[class$='Page'] > div:nth-of-type(1) > p{
+        font-size: 14px; color: white; max-width: 600px; padding: 0 2.5%;
+        display: inline-block; width: 100%; margin-bottom: 15px;
+    }
+    
+    section[class$='Page'] > article h3{
+        font-size: 24px; color: #b1b1b1; margin: 50px auto 25px;
+    }
+    
+    section[class$='Page'] > article ol li h4{
+        margin: 15px 0 20px; font-size: 20px; color: #cfcfcf;
+    }
+    
+    section[class$='Page'] > article ul li,
+    section[class$='Page'] > article p{
+        margin-bottom: 15px; font-size: 16px; color: #dfdfdf;
+    }
+    
+    section[class$='Page'] address ul li strong,
+    section[class$='Page'] address ul li:last-of-type a{
+        font-size: 16px; color: #b1b1b1;
+    }
+    
+    section[class$='Page'] address ul li span,
+    section[class$='Page'] address ul li:not(:last-of-type) a{
+        font-size: 16px; color: #dfdfdf; display: block;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1279px){
+
+    output {
+        left: 85%;
+    }
+
+    .signUpContent,
+    section.listPageContent h2,
+    section[class$='Page'],
+    section.gloveFinderContent,
+    section.aboutEverlast{
+        position: relative; padding-top: 140px;
+    }
+    
+    section[class$='Page'] > div:nth-of-type(1):not(.shippingInfomationBox),
+    section.shipping_InfomationPage h2,
+    section.contactUsPage h2,
+    section.sizeChartPage h2,
+    section.everlastFaqPage h2{
+        font-size: 46px; color: white; width: 100%;
+        position: absolute; padding-top: 70px; text-align: center;
+    }
+    
+    section[class$='Page'] h2{
+        font-size: 46px; color: white; margin-bottom: 20px;
+    }
+    
+    section[class$='Page'] > div:nth-of-type(1) > p{
+        font-size: 20px; color: white; max-width: 800px;
+        display: inline-block; width: 100%; margin-bottom: 15px;
+    }
+    
+    section[class$='Page'] > article h3{
+        font-size: 30px; color: #b1b1b1; margin: 50px auto 25px;
+    }
+    
+    section[class$='Page'] > article ol li h4{
+        margin: 15px 0 20px; font-size: 24px; color: #cfcfcf;
+    }
+    
+    section[class$='Page'] > article ul li,
+    section[class$='Page'] > article p{
+        margin-bottom: 15px; font-size: 20px; color: #dfdfdf;
+    }
+    
+    section[class$='Page'] address ul li strong,
+    section[class$='Page'] address ul li:last-of-type a{
+        font-size: 24px; color: #b1b1b1;
+    }
+    
+    section[class$='Page'] address ul li span,
+    section[class$='Page'] address ul li:not(:last-of-type) a{
+        font-size: 20px; color: #dfdfdf; display: block;
+    }
+}
+
+/* tablet fin */
+
+@media screen and (min-width:1280px){
+
+    output {
+        left: 88%;
+    }
+
+    section[class$='Page'],
+    .signUpContent,
+    section.listPageContent h2,
+    section.gloveFinderContent,
+    section.aboutEverlast{
+        position: relative; padding-top: 181.2px;
+    }
+    
+    section[class$='Page'] > div:nth-of-type(1):not(.shippingInfomationBox),
+    section.shipping_InfomationPage h2,
+    section.contactUsPage h2,
+    section.sizeChartPage h2,
+    section.everlastFaqPage h2{
+        font-size: 60px; color: white; width: 100%;
+        position: absolute; padding-top: 70px; text-align: center;
+    }
+    
+    section[class$='Page'] h2{
+        font-size: 60px; color: white; margin-bottom: 20px;
+    }
+    
+    section[class$='Page'] > div:nth-of-type(1) > p{
+        font-size: 20px; color: white; max-width: 1000px;
+        display: inline-block; width: 100%;
+    }
+    
+    section[class$='Page'] > article h3{
+        font-size: 30px; color: #b1b1b1; margin: 50px auto 25px;
+    }
+    
+    section[class$='Page'] > article ol li h4{
+        margin: 15px 0 20px; font-size: 24px; color: #cfcfcf;
+    }
+    
+    section[class$='Page'] > article ul li,
+    section[class$='Page'] > article p{
+        margin-bottom: 15px; font-size: 20px; color: #dfdfdf;
+    }
+    
+    section[class$='Page'] address ul li strong,
+    section[class$='Page'] address ul li:last-of-type a{
+        font-size: 30px; color: #b1b1b1;
+    }
+    
+    section[class$='Page'] address ul li span,
+    section[class$='Page'] address ul li:not(:last-of-type) a{
+        font-size: 24px; color: #dfdfdf; display: block;
+    }
+}
+
+/* desctop fin */
