@@ -598,7 +598,7 @@ body > div.paging ol li a.active{
         right: 5%;
     }
     .bx-wrapper .bx-prev{
-        left: 81.5%;
+        left: 77.5%;
     }
     .headerTop{
         line-height: 50px; font-size: 12px;
@@ -730,79 +730,7 @@ body > div.paging ol li a.active{
 
     /* login and signup fins */
     .ShoppingCart{
-        width: 93%; height: 550px; padding:30px 3.5% 50px; left: 0; top: 110px;
-
-    }
-
-    .ShoppingCart > div:first-of-type{
-        width: 100%; margin-bottom: 30px;
-    }
-    .ShoppingCart > div:last-of-type{
-        width: 95%;
-    }
-    .ShoppingCart div:first-of-type ul li:nth-of-type(1) span:first-of-type{
-        width: 50%;
-    }
-    .ShoppingCart div:first-of-type ul li:nth-of-type(1) span:nth-of-type(2){
-        margin-left: 35%;
-    }
-    .ShoppingCart div:first-of-type ul li:nth-of-type(1) span:nth-of-type(3){
-        margin-left: 4%;
-    }
-    .ShoppingCart div:first-of-type ul li:nth-of-type(1) span:last-of-type{
-        margin-left: 2%;
-    }
-    .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) figure figcaption dl dt{
-        font-size: 12px;
-    }
-    .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) figure figcaption dl dd{
-        font-size: 12px;
-    }
-    .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) span select,
-    .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) span input{
-        width: 12%;
-    }
-    .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) input[type=button]{
-        top: 31%;
-    }
-    .ShoppingCart > div:last-of-type ul li:nth-of-type(1) input{
-        padding-left: 5%;
-    }
-    .ShoppingCart > div:last-of-type ul li:nth-of-type(1) input:first-of-type{
-        background-position: 25%;
-    }
-    .ShoppingCart > div:last-of-type ul li:nth-of-type(1) input:last-of-type{
-        background-position: 30%; 
-    }
-    .ShoppingCart > div:last-of-type ul li:nth-of-type(3) input{
-        width: 23%;
-    }
-
-    /* ShoppingCar fin */
-
-    .careerPopup{
-        width: 94%; height: 80%; padding: 30px 3%;
-        left: 0; top: 110px;
-    }
-
-    .careerPopup > form fieldset ul li label{
-        font-size: 16px; width: 50%;
-    }
-
-    /* careerPopup fin */
-
-    .popupDialog{
-        width: 60%; padding: 30px 0 40px; top: 40%; left: 20%;
-    }
-
-    /* popupDialog fin */
-
-}
-
-@media screen and (max-width:280px){
-
-    .ShoppingCart{
-        height: 470px;
+        width: 93%; height: 500px; padding:30px 3.5% 50px; left: 0; top: 110px;
     }
     .ShoppingCart > div:first-of-type{
         width: 100%; margin-bottom: 30px;
@@ -832,13 +760,13 @@ body > div.paging ol li a.active{
         width: 100%;
     }
     .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) figure figcaption dl dt{
-        font-size: 12px;
+        font-size: 14px;
     }
     .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) figure figcaption dl dd{
-        font-size: 12px;
+        font-size: 14px;
     }
     .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) > span{
-        font-size: 14px;
+        font-size: 16px;
     }
     .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) span select,
     .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) span input{
@@ -860,13 +788,13 @@ body > div.paging ol li a.active{
         width: 22%;
     }
     .ShoppingCart > div:last-of-type ul li input::placeholder{
-        font-size: 12px;
+        font-size: 14px;
     }
     .ShoppingCart div:first-of-type > div span{
-        font-size: 18px; line-height: 40px;
+        font-size: 24px; line-height: 40px;
     }
     .ShoppingCart div:first-of-type > div input{
-        width: 130px; font-size: 12px;
+        width: 160px; font-size: 14px;
     }
     .ShoppingCart > div:last-of-type ul li:nth-of-type(4) input:first-of-type,
     .ShoppingCart > div:last-of-type ul li:nth-of-type(4) label:first-of-type{
@@ -875,6 +803,50 @@ body > div.paging ol li a.active{
     .ShoppingCart > div:last-of-type ul li:nth-of-type(4) input:last-of-type,
     .ShoppingCart > div:last-of-type ul li:nth-of-type(4) label:last-of-type{
         width: 35%;
+    }
+
+    /* ShoppingCar fin */
+
+    .careerPopup{
+        width: 94%; height: 80%; padding: 30px 3%;
+        left: 0; top: 110px;
+    }
+
+    .careerPopup > form fieldset ul li label{
+        font-size: 16px; width: 50%;
+    }
+
+    /* careerPopup fin */
+
+    .popupDialog{
+        width: 60%; padding: 30px 0 40px; top: 40%; left: 20%;
+    }
+
+    /* popupDialog fin */
+
+}
+
+@media screen and (max-width:280px){
+    .ShoppingCart{
+        width: 93%; height: 470px; padding:30px 3.5% 50px; left: 0; top: 110px;
+    }
+    .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) > span{
+        font-size: 14px;
+    }
+    .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) figure figcaption dl dt{
+        font-size: 12px;
+    }
+    .ShoppingCart div:first-of-type ul li:not(:nth-of-type(1)) figure figcaption dl dd{
+        font-size: 12px;
+    }
+    .ShoppingCart div:first-of-type > div input{
+        width: 130px; font-size: 12px;
+    }
+    .ShoppingCart > div:last-of-type ul li input::placeholder{
+        font-size: 12px;
+    }
+    .ShoppingCart div:first-of-type > div span{
+        font-size: 18px; line-height: 40px;
     }
 }
 
